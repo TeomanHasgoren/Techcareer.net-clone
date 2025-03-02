@@ -93,22 +93,37 @@ nav ul li a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
     gap: 30px;
-    padding: 70px 20px;
+    padding: 0 0;
 
 }
 .event-container{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 30rem;
+    width: 27rem;
     
 }
+.event-container h3{
+    padding-top: 10px;
+    font-size: 1.01rem;
+    font-weight: bold;
+}
+.event-container p{
+    
+    font-size: 0.9rem;
+}
 .event-card {
+    box-sizing: border-box;
+    color: rgb(29, 29, 29);
+    display: block;
+    flex-basis: auto;
+    flex-grow: 0;
+    font-size: 16px;
+    font-weight: 400px;
+    letter-spacing: 0.15px;
+    line-height: 24px;
+    min-width: 0;
+    text-align: center;
     background: #ffffff;
     padding: 30px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    border: none;
+
 }
 .event-card:hover {
     border: 5px;
@@ -118,7 +133,7 @@ nav ul li a {
     background: #4caf50;
     color: white;
     border: none;
-    padding: 14px 28px;
+    padding: 5px 40px;
     font-size: 1.2rem;
     cursor: pointer;
     border-radius: 8px;
@@ -129,11 +144,41 @@ nav ul li a {
     text-align: center;
     font-size: 1.3rem;
 }
-footer {
-    background: #ffffff;
-    color: #1d1d1d;
+
+.event-card .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.event-card .h4{
+    color: gray;
+    font-size: 1rem;
+}
+
+.container .img-wrap{
+    height: 220px;
     text-align: center;
-    padding: 25px;
-    font-size: 1.1rem;
-    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding: 1rem;
+}
+.container .img-wrap img{
+    height:100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.container .info-wrap{
+        padding: 1rem 1.2rem;
+}
+
+span{
+    margin-bottom: 40px;
+}
+
+.event-card button{
+    height: 100%;
+    text-align: center;
+    margin-top: 10px;
 }

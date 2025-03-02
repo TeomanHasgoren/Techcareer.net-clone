@@ -1,7 +1,10 @@
 .footer {
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-top: 1px solid #ddd;
+    background: #f8f9fa;
+    color: #1d1d1d;
+    text-align: center;
+    padding: 25px;
+    font-size: 1.1rem;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
 }
 .footer-container {
     display: flex;
@@ -11,26 +14,46 @@
     margin: auto;
 }
 .footer-section {
+    background: #f8f9fa;
     flex: 1;
-    padding: 5px;
+    padding: 20px;
+    gap: 20px;
     min-width: 180px;
 }
 .footer-section h4 {
     color: #666;
-    font-size: 14px;
+    font-size: 1rem;
 }
-.footer-section p {
+.footer-section a {
+    color: #000;
+    font-size: 0.9rem;
+    margin: 5px 0;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 100px;
+    padding-bottom: 10px;
+}
+.footer-section a:hover{
+    color: #000;
+    font-size: 0.9rem;
+    margin: 5px 0;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 100px;
+    padding-bottom: 10px;
+}
+.footer-section .social-icons a {
     color: #000;
     font-size: 13px;
     margin: 5px 0;
     cursor: pointer;
     font-weight: bold;
     text-decoration: none;
+    padding: 5px;
 }
-.footer-section p:hover {
-    text-decoration: underline;
-    color: #007bff;
-}
+
 .footer-bottom {
     display: flex;
     justify-content: space-between;
@@ -78,6 +101,9 @@
     text-align: left;
     padding: 10px 20px;
 }
+.footer-social{
+    font-size:0.9rem;
+}
 .footer-section.social-media {
     display: flex;
     justify-content: space-between;
@@ -92,12 +118,20 @@
     gap: 10px;
     justify-content: center;
     align-items: center;
+    
+    
 }
 .social-icons a {
     text-decoration: none;
     color: #666;
     font-size: 18px;
+    
 }
-.social-icons a:hover {
-    color: #007bff;
+.social-icons a i {
+    border:10px solid #f8f9fa;
+    border-radius: 20px;
+}
+
+.footer-section .br{
+    padding: 8px;
 }
