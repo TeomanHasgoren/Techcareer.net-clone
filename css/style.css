@@ -41,13 +41,13 @@ nav ul li a {
     position: relative;
   }
   
-  .background-img {
+.background-img {
     width: 100%;
     height: fit-content;
     display: block; /* Görselin altındaki boşluğu engellemek için */
   }
   
-  .overlay-content {
+.overlay-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -61,21 +61,21 @@ nav ul li a {
     z-index: 1; /* İçeriğin resmin üstünde görünmesi için */
   }
   
-  .text-content {
+.text-content {
     width: 60%; /* Sol alandaki metin kısmının genişliği */
     text-align: center;
   }
   
-  .image-content img {
+.image-content img {
     width: 150%; /* Resmin genişliği */
     height: auto;
   }
   
-  h1, p, button {
+h1, p, button {
     margin: 10px 0;
   }
 .hero button {
-    background: #4caf50;
+    background: #00C26D;
     color: white;
     border: none;
     padding: 15px 35px;
@@ -83,31 +83,6 @@ nav ul li a {
     cursor: pointer;
     border-radius: 8px;
     margin-top: 20px;
-}
-.events {
-    text-align: center;
-    background: #f8f9fa;
-    padding: 70px;
-}
-.event-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
-    gap: 30px;
-    padding: 0 0;
-
-}
-.event-container{
-    width: 27rem;
-    
-}
-.event-container h3{
-    padding-top: 10px;
-    font-size: 1.01rem;
-    font-weight: bold;
-}
-.event-container p{
-    
-    font-size: 0.9rem;
 }
 .event-card {
     box-sizing: border-box;
@@ -130,7 +105,7 @@ nav ul li a {
     border-color: #1d1d1d;
 }
 .event-card button {
-    background: #4caf50;
+    background: #00C26D;
     color: white;
     border: none;
     padding: 5px 40px;
@@ -160,7 +135,6 @@ nav ul li a {
     height: 220px;
     text-align: center;
     position: relative;
-    padding: 1rem;
 }
 .container .img-wrap img{
     height:100%;
@@ -170,7 +144,7 @@ nav ul li a {
 }
 
 .container .info-wrap{
-        padding: 1rem 1.2rem;
+    padding: 1rem ;
 }
 
 span{
