@@ -114,7 +114,7 @@ h1, p, button {
     border-radius: 8px;
 }
 .about {
-    background: #f0f0f0;
+    background: #fff;
     padding: 80px 60px;
     text-align: center;
     font-size: 1.3rem;
@@ -155,4 +155,115 @@ span{
     height: 100%;
     text-align: center;
     margin-top: 10px;
+}
+
+.who_join{
+    background-color: #f4f5f7;
+    margin: 50px 450px;
+    font-size: 18px;
+    letter-spacing: 0.15px;
+    font-weight: 550;
+
+}
+.improve_yourself{
+    background-color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.improve_yourself h2{
+    text-align: left;
+    font-size: 33px;
+}
+.content-box {
+    max-width: 1100px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.card {
+    border: 1px solid #575757;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+.card p{
+    font-weight: 550;
+}
+
+.icon img {
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.testimonial-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+.testimonial-section h2{
+    text-align: left;
+    padding-left: 22%;
+}
+.testimonial-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #868686;
+    width: 600px;
+    height: 200px;
+}
+
+.testimonial-card img {
+    flex: 1;
+    max-width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.testimonial-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+}
+
+.testimonial-text {
+    flex: 1;
+    max-height: 110px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/* Kaydırma Çubuğu */
+.testimonial-text::-webkit-scrollbar {
+    width: 6px;
+}
+
+.testimonial-text::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+/* Kullanıcı Bilgileri */
+.testimonial-author {
+    padding-top: 10px;
+}
+
+.testimonial-author h4 {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+.testimonial-author span {
+    font-size: 14px;
+    color: #777;
+}
+
+.owl-carousel{
+    width: 1200px;
+    margin: auto;
 }

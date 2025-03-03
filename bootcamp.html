@@ -10,8 +10,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
+
+    <style>
+        *{
+            font-family: "Roboto,sans serif";
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -26,185 +34,300 @@
             </ul>
         </nav>
     </header>
-
-    <section class="hero">
-        <img src="img/Bootcamp_background.png" alt="Background" class="background-img">
-        <div class="overlay-content">
-            <div class="text-content">
-                <h1>Bootcamp</h1>
-                <p>Uzman eğitmenler eşliğinde projeler üzerinde çalışarak gerçek dünya tecrübesi edin, kariyerinde hızla yüksel. Teknoloji dünyasında fark yarat!</p>
-                <button>Keşfet</button>
+    <main>
+        <section class="hero">
+            <img src="img/Bootcamp_background.png" alt="Background" class="background-img">
+            <div class="overlay-content">
+                <div class="text-content">
+                    <h1>Bootcamp</h1>
+                    <p>Uzman eğitmenler eşliğinde projeler üzerinde çalışarak gerçek dünya tecrübesi edin, kariyerinde hızla yüksel. Teknoloji dünyasında fark yarat!</p>
+                    <button>Keşfet</button>
+                </div>
+                <div class="image-content">
+                    <img src="img/icon-bootcamp.svg" alt="Bootcamp Icon">
+                </div>
             </div>
-            <div class="image-content">
-                <img src="img/icon-bootcamp.svg" alt="Bootcamp Icon">
+        </section>
+
+        <section class="mt-3 mb-3">
+            <div class="container">
+                <h2 class="mb-1 mb-lg-3 text-center text-dark-800">Başvurunu Bekleyen Etkinlikler</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+                    <div class="event-card bg-white p-4 mx-3" >
+                        <div class="img-wrap">
+                            <img src="img/Experian_Young_Talent_Bootcamp.webp" alt="">
+                        </div>
+                        <h3>Experian Young Talent Bootcamp</h3>
+                        <p>Ücretsiz öğren, mezun ol, çalışmaya başla!</p>
+                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        <br>
+                        <div class="border-top info-wrap row row-cols-2">
+                            <div class="row">
+                                <p class="title">Son Başvuru tarihi</p>
+                                <p class="title">02.03.2025</p>
+                            </div>
+                            <button>Başvur</button>
+                        </div>
+                    </div>
+                    <div class="event-card bg-white p-4 mx-3">
+                        <div class="img-wrap">
+                            <img src="img/E2E_API_Automatin&Load_Test_Workshop.webp" alt="">
+                        </div>
+                        <h3>E2E API Automation & Load Test Workshop</h3>
+                        <p>Ücretsiz öğren, mezun ol, iş fırsatı yakala!</p>
+                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        <br>
+                        <div class="border-top info-wrap row row-cols-2">
+                            <div class="row">
+                                <p class="title">Son Başvuru tarihi</p>
+                                <p class="title">02.03.2025</p>
+                            </div>
+                            <button>Başvur</button>
+                        </div>
+                    </div>
+                    <div class="event-card bg-white p-4 mx-3">
+                        <div class="img-wrap">
+                            <img src="img/Test_Lab_QA_Bootcamp.webp" alt="">
+                        </div>
+                        <h3>Test Lab QA Bootcamp</h3>
+                        <p>Ücretsiz öğren, mezun ol, iş fırsatı yakala!</p>
+                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        <br>
+                        <div class="border-top info-wrap row row-cols-2">
+                            <div class="row">
+                                <p class="title">Son Başvuru tarihi</p>
+                                <p class="title">02.03.2025</p>
+                            </div>
+                            <button>Başvur</button>
+                        </div>
+                    </div>
+                    <div class="event-card bg-white p-4 mx-3">
+                        <div class="img-wrap">
+                            <img src="img/AI_Fundamentals_With_IBM_Skills_Build_Eğitimi.webp" alt="">
+                        </div>
+                        <h3>AI Fundamentals with IBM SkillsBuild Eğitimi</h3>
+                        <p>Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
+                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        <br>
+                        <div class="border-top info-wrap row row-cols-2">
+                            <div class="row">
+                                <p class="title">Son Başvuru tarihi</p>
+                                <p class="title">02.03.2025</p>
+                            </div>
+                            <button>Başvur</button>
+                        </div>
+                    </div>
+                    <div class="event-card bg-white p-4 mx-3">
+                        <div class="img-wrap">
+                            <img src="img/Database_Management_Bootcamp_with_MSSQL.webp" alt="">
+                        </div>
+                        <h3>Database Management Bootcamp with MSSQL</h3>
+                        <p>Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
+                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        <br>
+                        <div class="border-top info-wrap row row-cols-2">
+                            <div class="row">
+                                <p class="title">Son Başvuru tarihi</p>
+                                <p class="title">02.03.2025</p>
+                            </div>
+                            <button>Başvur</button>
+                        </div>
+                    </div>
+                    <div class="event-card bg-white p-4 mx-3">
+                        <div class="img-wrap">
+                            <img src="img/Web_Crafters.webp" alt="">
+                        </div>
+                        <h3>Web Crafters: The Art of HTML&CSS Workshop</h3>
+                        <p>Ücretsiz öğren, mezun ol, iş fırsatı yakala!</p>
+                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        <br>
+                        <div class="border-top info-wrap row row-cols-2">
+                            <div class="row">
+                                <p class="title">Son Başvuru tarihi</p>
+                                <p class="title">02.03.2025</p>
+                            </div>
+                            <button>Başvur</button>
+                        </div>
+                    </div>
+                    <div class="event-card bg-white p-4 mx-3">
+                        <div class="img-wrap">
+                            <img src="img/ML_Workshop.webp" alt="">
+                        </div>
+                        <h3>Intro to Machine Learning Workshop</h3>
+                        <p>Üniversitelilere özel ücretsiz Eğitim Fırsatını Kaçırma!</p>
+                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        <br>
+                        <div class="border-top info-wrap row row-cols-2">
+                            <div class="row">
+                                <p class="title">Son Başvuru tarihi</p>
+                                <p class="title">02.03.2025</p>
+                            </div>
+                            <button>Başvur</button>
+                        </div>
+                    </div>
+                    <div class="event-card bg-white p-4 mx-3">
+                        <div class="img-wrap">
+                            <img src="img/SQL101.webp" alt="">
+                        </div>
+                        <h3>SQL 101: Sıfırdan Başlangıç</h3>
+                        <p>Ücretsiz öğren, mezun ol, sertifikaya hak kazan!</p>
+                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        <br>
+                        <div class="border-top info-wrap row row-cols-2">
+                            <div class="row">
+                                <p class="title">Son Başvuru tarihi</p>
+                                <p class="title">02.03.2025</p>
+                            </div>
+                            <button>Başvur</button>
+                        </div>
+                    </div>
+                    <div class="event-card bg-white p-4 mx-3">
+                        <div class="img-wrap">
+                            <img src="img/Swift_Craft.webp" alt="">
+                        </div>
+                        <h3>SwiftCraft: IOS Development Bootcamp</h3>
+                        <p>Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
+                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        <br>
+                        <div class="border-top info-wrap row row-cols-2">
+                            <div class="row">
+                                <p class="title">Son Başvuru tarihi</p>
+                                <p class="title">02.03.2025</p>
+                            </div>
+                            <button>Başvur</button>
+                        </div>
+                    </div>
+            </div>
+            </div>   
+        </section>
+
+        <section class="about">
+            <img src="img/event-picture-bootcamp.webp" alt="">
+            <h2>Bootcamp Nedir?</h2>
+            <p>Bootcamp, yazılım teknolojileri, veri bilimi, ürün yönetimi gibi bilişim alanındaki konularda düzenlenen ücretsiz bir öğrenme maratonudur. Bootcamp'in amacı katılımcıları güncel yazılım teknolojileri alanında sıfırdan eğitip, ilgilenilen alanda işe başlayabilecek bilgi ve donanım seviyesine eriştirmektir.</p>
+            <p>6-8 haftalık ücretsiz eğitim programıyla şirketlerde bir yazılımcı olarak çalışabilecek yetenekleri sektöre kazandırır. Katılımcılar eğitim boyunca gerçek hayata dair projeler yapar, ürünler geliştirir ve başarıyla mezun olur.</p>
+            <p>Mezuniyet sonrası katılımcılara sertifika verilir ve program sonunda şirketlerde çalışma fırsatı sunulabilir.</p>
+        </section>
+        <section class="who_join">
+                <h2 class="fw-bold">Kimler Katılabilir? 👀</h2>
+                <ul class="mt-3">
+                    <li><span>Teknoloji alanında kariyer hedefliyorsan sene içerisinde mezun olacak, yeni mezun veya son bir kaç sene içerisinde mezun olmuş ve tam zamanlı bir işte çalışmıyorsan,</span></li><br>
+                    <li><span>İlgi alanın yazılım teknolojileri, veri bilimi, ürün yönetimi gibi bilişim alanındaki konularda olup kariyer patikasını teknoloji odaklı değiştirmek istiyorsan,</span> </li><br>
+                    <li><span>Yazılım kariyerine yeni başlamış ancak güncel teknolojiler ile daha da gelişmek istiyorsan, </span></li><br>
+                    <li><span>Ücretsiz bootcamp programlarımıza başvurabilirsin!</span></li><br>
+                </ul>
+        </section>
+        <section class="improve_yourself">
+            <div class="content-box">
+                <h2 class="fw-bold">Seni Neler Bekliyor? 🎯</h2>
+                <div class="row mt-4">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="icon">
+                                <img src="img/improve-yourself-icon0.svg" alt="">
+                            </div>
+                            <p>Yazılım kariyerini başlatmak veya ilerletmek için ücretsiz yazılım eğitimi alırsın</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="icon">
+                                <img src="img/improve-yourself-icon1.svg" alt="">
+                            </div>
+                            <p>Bootcamp programından mezun olduğunda "Sertifika" alırsın</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="icon">
+                                <img src="img/improve-yourself-icon2.svg" alt="">
+                            </div>
+                            <p>Bootcamp'i düzenleyen şirkette veya istediğin yerde çalışma fırsatı elde edebilirsin</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="icon">
+                                <img src="img/improve-yourself-icon3.svg" alt="">
+                            </div>
+                            <p>Kariyerini istediğin gibi şekillendirebilir, hayalindeki işe kavuşabilirsin</p>
+                        </div>
+                    </div>           
+                </div>
+            </div>
+    </section>
+    <section class="testimonial-section">
+        <h2>Bizi Katılımcılarımızdan Dinle</h2>
+        
+        <!-- Owl Carousel ile dönen 4 katılımcı -->
+        <div class="owl-carousel owl-theme ">
+            <!-- 1. Katılımcı -->
+            <div class="item">
+                <div class="testimonial-card">
+                    <img src="img/user.png" alt="Katılımcı 1">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <p>Angular bootcampine katılmadan önce, Angular konusunda hiç bilgim olmadığını belirtmek isterim. Ancak TeechCareer aracılığıyla Hyper company’nin düzenlediği bu bootcamp, beklentilerimin ötesine geçti. Yoğun bir eğitim programı olmasına rağmen, her bir oturum, kapsamlı bir şekilde Angular’ı öğrenmeme ve uygulamama olanak sağladı. Eğitmenimizin uzmanlığı ve öğretim yöntemleri, karmaşık konuları anlamamı kolaylaştırdı. Bootcamp boyunca, gerçek dünya projelerinde uygulamalı deneyim kazanma fırsatım oldu. Bu, sadece teorik bilgiyi değil, aynı zamanda pratik becerileri de geliştirmeme olanak tanıdı. Eğitimin yoğunluğuna rağmen, her anı keyifli ve öğreticiydi. Eğitmenlerin ve diğer katılımcıların desteğiyle, Angular’ı anlamak ve etkili bir şekilde kullanmak konusunda büyük bir ilerleme kaydettim. Sonuç olarak, bu bootcamp, Angular’ı öğrenmek isteyen herkese şiddetle tavsiye edeceğim bir deneyimdi. Bu değerli deneyim için eğitmenimize, TeechCareer ve Hyper company ekibine çok teşekkür ederim.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h4>Melike Aydın</h4>
+                            <span>Tech Recruitment Bootcamp</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2. Katılımcı -->
+            <div class="item">
+                <div class="testimonial-card">
+                    <img src="img/user.png" alt="Katılımcı 2">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <p>QA alanında kendimi geliştirmek istediğim bir dönemde Techcareer.net ile tanıştım.
+                                Bootcamp başından sonuna öğretici ve bir o kadar da keyifli bir süreçti. Dönüp ardıma baktığımda gerçekten
+                                büyük yol katettiğimi görüyorum. Techcareer.net ailesine desteklerinden dolayı ve bize sağladığı
+                                samimi ortam için çok teşekkür ederim.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h4>Tunahan Kabakçı</h4>
+                            <span>Sigortam.net Software QA Bootcamp</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 3. Katılımcı -->
+            <div class="item">
+                <div class="testimonial-card">
+                    <img src="img/user.png" alt="Katılımcı 3">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <p>Angular Bootcamp programına katılmak benim için gerçek bir dönüm noktası oldu. Eğitim süreci boyunca edindiğim bilgiler, becerilerimi geliştirmeme ve gerçek dünya projelerinde daha etkili bir şekilde çalışmama olanak tanıdı. Öncelikle, eğitmenlerin uzmanlığı ve öğretme tarzları beni etkileyerek, karmaşık Angular konseptlerini anlamamı sağladı. Derslerin interaktif ve uygulamalı olması, teorik bilgileri hemen pratiğe dökmeme fırsat tanıdı. Ayrıca, gerçek projelerde çalışma şansı bulmak, öğrenilenleri günlük iş süreçlerine entegre etmemde büyük bir rol oynadı. Eğitim sürecinin en değerli yanlarından biri, sadece Angular'ı değil, aynı zamanda genel web geliştirme prensiplerini de öğrenmek oldu. Bu, sadece mevcut teknolojiyi öğrenmekle kalmayıp, aynı zamanda gelecekteki projelerde de daha esnek ve uygulanabilir olmama yardımcı oldu. Programın organizasyonu ve içeriği, katılımcılara kapsamlı bir bakış açısı kazandırdı ve her seviyeden geliştiriciye hitap etti. Ayrıca, eğitim sonrasında sağlanan destek ve kaynaklar, kendi projelerimi geliştirmemde bana rehberlik etti.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h4>Baran Emre Bulak</h4>
+                            <span>Hyper Company Front-end Angular Bootcamp</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 4. Katılımcı -->
+            <div class="item">
+                <div class="testimonial-card">
+                    <img src="img/user.png" alt="Katılımcı 4">
+                    <div class="testimonial-content">
+                        <div class="testimonial-text">
+                            <p>Front-end alanında çıktığım bu yolculukta Techcareer ile tanışmam ve Techcareer ile Hyper Company işbirliği ile düzenlenen bootcampte yer almam benim için unutulmaz bir fırsattı. İş dünyasına adım atmadan önce her önemli konunun değinildiği bu güzel bootcampte daha önce deneyimlemediğim anlar yaşadım. Bununla birlikte benimle aynı heyecanı yaşayan arkadaşlarla ve eğitmenimizle tanışmak benim için anlatılmaz bir duyguydu. Techcareer sayesinde sadece bir eğitimden daha fazlasını edindim. Bu imkanları sunduğu için Techcareer'e ne kadar teşekkür etsem az.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <h4>Beyzanur Seyhan</h4>
+                            <span>Hyper Company Front-end Angular Bootcamp</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="mt-3 mb-3">
-        <div class="container">
-            <h2 class="mb-1 mb-lg-3 text-center text-dark-800">Başvurunu Bekleyen Etkinlikler</h2>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-                <div class="event-card bg-white p-4 mx-3" >
-                    <div class="img-wrap">
-                        <img src="img/Experian_Young_Talent_Bootcamp.webp" alt="">
-                    </div>
-                    <h3>Experian Young Talent Bootcamp</h3>
-                    <p>Ücretsiz öğren, mezun ol, çalışmaya başla!</p>
-                    <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    <br>
-                    <div class="border-top info-wrap row row-cols-2">
-                        <div class="row">
-                            <p class="title">Son Başvuru tarihi</p>
-                            <p class="title">02.03.2025</p>
-                        </div>
-                        <button>Başvur</button>
-                    </div>
-                </div>
-                <div class="event-card bg-white p-4 mx-3">
-                    <div class="img-wrap">
-                        <img src="img/E2E_API_Automatin&Load_Test_Workshop.webp" alt="">
-                    </div>
-                    <h3>E2E API Automation & Load Test Workshop</h3>
-                    <p>Ücretsiz öğren, mezun ol, iş fırsatı yakala!</p>
-                    <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    <br>
-                    <div class="border-top info-wrap row row-cols-2">
-                        <div class="row">
-                            <p class="title">Son Başvuru tarihi</p>
-                            <p class="title">02.03.2025</p>
-                        </div>
-                        <button>Başvur</button>
-                    </div>
-                </div>
-                <div class="event-card bg-white p-4 mx-3">
-                    <div class="img-wrap">
-                        <img src="img/Test_Lab_QA_Bootcamp.webp" alt="">
-                    </div>
-                    <h3>Test Lab QA Bootcamp</h3>
-                    <p>Ücretsiz öğren, mezun ol, iş fırsatı yakala!</p>
-                    <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    <br>
-                    <div class="border-top info-wrap row row-cols-2">
-                        <div class="row">
-                            <p class="title">Son Başvuru tarihi</p>
-                            <p class="title">02.03.2025</p>
-                        </div>
-                        <button>Başvur</button>
-                    </div>
-                </div>
-                <div class="event-card bg-white p-4 mx-3">
-                    <div class="img-wrap">
-                        <img src="img/AI_Fundamentals_With_IBM_Skills_Build_Eğitimi.webp" alt="">
-                    </div>
-                    <h3>AI Fundamentals with IBM SkillsBuild Eğitimi</h3>
-                    <p>Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
-                    <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    <br>
-                    <div class="border-top info-wrap row row-cols-2">
-                        <div class="row">
-                            <p class="title">Son Başvuru tarihi</p>
-                            <p class="title">02.03.2025</p>
-                        </div>
-                        <button>Başvur</button>
-                    </div>
-                </div>
-                <div class="event-card bg-white p-4 mx-3">
-                    <div class="img-wrap">
-                        <img src="img/Database_Management_Bootcamp_with_MSSQL.webp" alt="">
-                    </div>
-                    <h3>Database Management Bootcamp with MSSQL</h3>
-                    <p>Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
-                    <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    <br>
-                    <div class="border-top info-wrap row row-cols-2">
-                        <div class="row">
-                            <p class="title">Son Başvuru tarihi</p>
-                            <p class="title">02.03.2025</p>
-                        </div>
-                        <button>Başvur</button>
-                    </div>
-                </div>
-                <div class="event-card bg-white p-4 mx-3">
-                    <div class="img-wrap">
-                        <img src="img/Web_Crafters.webp" alt="">
-                    </div>
-                    <h3>Web Crafters: The Art of HTML&CSS Workshop</h3>
-                    <p>Ücretsiz öğren, mezun ol, iş fırsatı yakala!</p>
-                    <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    <br>
-                    <div class="border-top info-wrap row row-cols-2">
-                        <div class="row">
-                            <p class="title">Son Başvuru tarihi</p>
-                            <p class="title">02.03.2025</p>
-                        </div>
-                        <button>Başvur</button>
-                    </div>
-                </div>
-                <div class="event-card bg-white p-4 mx-3">
-                    <div class="img-wrap">
-                        <img src="img/ML_Workshop.webp" alt="">
-                    </div>
-                    <h3>Intro to Machine Learning Workshop</h3>
-                    <p>Üniversitelilere özel ücretsiz Eğitim Fırsatını Kaçırma!</p>
-                    <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    <br>
-                    <div class="border-top info-wrap row row-cols-2">
-                        <div class="row">
-                            <p class="title">Son Başvuru tarihi</p>
-                            <p class="title">02.03.2025</p>
-                        </div>
-                        <button>Başvur</button>
-                    </div>
-                </div>
-                <div class="event-card bg-white p-4 mx-3">
-                    <div class="img-wrap">
-                        <img src="img/SQL101.webp" alt="">
-                    </div>
-                    <h3>SQL 101: Sıfırdan Başlangıç</h3>
-                    <p>Ücretsiz öğren, mezun ol, sertifikaya hak kazan!</p>
-                    <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    <br>
-                    <div class="border-top info-wrap row row-cols-2">
-                        <div class="row">
-                            <p class="title">Son Başvuru tarihi</p>
-                            <p class="title">02.03.2025</p>
-                        </div>
-                        <button>Başvur</button>
-                    </div>
-                </div>
-                <div class="event-card bg-white p-4 mx-3">
-                    <div class="img-wrap">
-                        <img src="img/Swift_Craft.webp" alt="">
-                    </div>
-                    <h3>SwiftCraft: IOS Development Bootcamp</h3>
-                    <p>Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
-                    <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    <br>
-                    <div class="border-top info-wrap row row-cols-2">
-                        <div class="row">
-                            <p class="title">Son Başvuru tarihi</p>
-                            <p class="title">02.03.2025</p>
-                        </div>
-                        <button>Başvur</button>
-                    </div>
-                </div>
-        </div>
-        </div>
-        
-        
-            
-        
-    </section>
-
-    <section class="about">
-        <img src="img/event-picture-bootcamp.webp" alt="">
-        <h2>Bootcamp Nedir?</h2>
-        <p>Bootcamp, yazılım teknolojileri, veri bilimi, ürün yönetimi gibi bilişim alanındaki konularda düzenlenen ücretsiz bir öğrenme maratonudur. Bootcamp'in amacı katılımcıları güncel yazılım teknolojileri alanında sıfırdan eğitip, ilgilenilen alanda işe başlayabilecek bilgi ve donanım seviyesine eriştirmektir.</p>
-        <p>6-8 haftalık ücretsiz eğitim programıyla şirketlerde bir yazılımcı olarak çalışabilecek yetenekleri sektöre kazandırır. Katılımcılar eğitim boyunca gerçek hayata dair projeler yapar, ürünler geliştirir ve başarıyla mezun olur.</p>
-        <p>Mezuniyet sonrası katılımcılara sertifika verilir ve program sonunda şirketlerde çalışma fırsatı sunulabilir.</p>
-    </section>
-
+    </main>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-section">
@@ -319,5 +442,26 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                loop: true,               // Sonsuz döngü
+                margin: 20,               // Kartlar arasındaki boşluk
+                nav: true,                // Önceki / Sonraki butonları
+                dots: true,               // Navigasyon noktaları
+                autoplay: true,           // Otomatik kaydırma
+                autoplayTimeout: 5000,    // 5 saniyede bir kaydır
+                responsive: {
+                    0: { items: 1 },      // Mobilde 1 kart
+                    768: { items: 2 },    // Tabletlerde 2 kart
+                    1024: { items: 2 },   // Büyük ekranlarda 3 kart
+                    1200: { items: 2 }    // Daha büyük ekranlarda 4 kart
+                }
+            });
+        });
+        </script>
+        
 </body>
 </html>
