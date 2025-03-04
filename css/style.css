@@ -181,6 +181,8 @@ span{
     font-weight: 550;
 
 }
+
+ /* improve_yourself */
 .improve_yourself{
     background-color: #fff;
     padding-top: 5px;
@@ -190,26 +192,27 @@ span{
     text-align: left;
     font-size: 33px;
 }
-.content-box {
+.improve_yourself .content-box {
     max-width: 1100px;
     margin: 40px auto;
     text-align: center;
 }
 
-.card {
-    border: 1px solid #575757;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
+.improve_yourself .card {
+    border: 1px solid #575757 !important;
+    border-radius: 10px !important;
+    padding: 20px !important;
+    text-align: center !important;
+    transition: all 0.3s ease-in-out !important;
 }
-.card p{
+.improve_yourself .card p{
     font-weight: 550;
 }
 
-.icon img {
-    width: 70px;
-    margin-bottom: 10px;
+.improve_yourself .icon img {
+    width: 70px !important;
+    margin-bottom: 10px !important;
+    padding: 0 !important;
 }
 
 .testimonial-section {

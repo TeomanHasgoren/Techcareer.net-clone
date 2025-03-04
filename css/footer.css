@@ -84,8 +84,9 @@
 .lang-switch span {
     width: 1px;
     height: 16px;
-    background-color: #333;
+    background-color: #888;
     display: inline-block;
+    margin-bottom: 0px !important;
 }
 .copyright {
     text-align: right;
