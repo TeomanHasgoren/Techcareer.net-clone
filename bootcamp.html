@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
 
     <style>
         *{
@@ -23,33 +24,78 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div><img src="img/logo.jpg" alt="" class="logo"></div>
-            <ul>
-                <li><a href="#">Etkinlikler</a></li>
-                <li><a href="#">İş İlanları</a></li>
-                <li><a href="#">Eğitimler</a></li>
-                <li><a href="#">Testler</a></li>
-                <li><a href="#">Komünite</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-3">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="img/logo.jpg" alt=""></a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <form class="d-flex">
+                    <input class="form-control search-box" type="search" placeholder="Etkinlik, İş İlanı, Blog Ara" aria-label="Search">
+                </form>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav d-flex align-items-center">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-success" href="#" id="etkinliklerDropdown" role="button">Etkinlikler</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Bootcamp</a>
+                                <a class="dropdown-item" href="#">Hackathon</a>
+                                <a class="dropdown-item" href="#">Hiring Challenge</a>
+                                <a class="dropdown-item" href="#">Tüm Etkinlikler</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">İş İlanları</a>
+                            <div class="job-info">Yeni işinle sen de hayalindeki kariyere kavuşabilirsin! Senin için topladığımız iş fırsatlarını şimdi incele!</div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Eğitimler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Testler</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="komuniteDropdown" role="button">Komünite</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Komüniteye Katıl</a>
+                                <a class="dropdown-item" href="#">Blog</a>
+                                <a class="dropdown-item" href="#">Podcast</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="btn btn-success">Giriş / Üye Ol</a>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero position-relative text-white">
             <img src="img/Bootcamp_background.png" alt="Background" class="background-img">
-            <div class="overlay-content">
-                <div class="text-content">
-                    <h1>Bootcamp</h1>
-                    <p>Uzman eğitmenler eşliğinde projeler üzerinde çalışarak gerçek dünya tecrübesi edin, kariyerinde hızla yüksel. Teknoloji dünyasında fark yarat!</p>
-                    <button>Keşfet</button>
-                </div>
-                <div class="image-content">
-                    <img src="img/icon-bootcamp.svg" alt="Bootcamp Icon">
+            <p class="link-content container"><a href="index.html">Anasayfa</a> > <a href="#">Bootcamp</a></p>
+            <div class="overlay-content container  d-flex align-items-center">
+                
+                <div class="row w-100 align-items-center">
+                    <!-- Metin İçeriği -->
+                    <div class="col-lg-6 col-md-7 col-12">
+                        <h1 class="fw-bold">Bootcamp</h1>
+                        <p class="lead">
+                            Uzman eğitmenler eşliğinde projeler üzerinde çalışarak gerçek dünya tecrübesi edin, 
+                            kariyerinde hızla yüksel. Teknoloji dünyasında fark yarat!
+                        </p>
+                        <button class="btn btn-success btn-lg">Keşfet</button>
+                    </div>
+                    <!-- Görsel İçeriği -->
+                    <div class="col-lg-6 col-md-5 col-12 text-center mt-4 mt-md-0">
+                        <img src="img/icon-bootcamp.svg" alt="Bootcamp Icon" class="img-fluid bootcamp-img">
+                    </div>
                 </div>
             </div>
         </section>
         
-        <section class="container my-5">
+        <section class="container event">
             <h1 class="text-center mb-4">Başvuru Bekleyen Etkinlikler</h1>
     
             <!-- Kartlar -->

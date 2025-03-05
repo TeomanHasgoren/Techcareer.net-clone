@@ -1,0 +1,56 @@
+header {
+    background: #ffffff;
+
+}
+
+.navbar {
+    justify-content: flex-start;
+    padding: 0;
+}
+header img {
+ height: 1.3rem;
+}
+header .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    max-width: 1250px;
+    width: 100%;
+}
+header .search-box {
+    width: 250px;
+    border-radius: 5px;
+}
+header .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header .navbar-brand {
+    font-size: 1.5rem;
+}
+header .btn-success {
+    white-space: nowrap;
+}
+header .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+header .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+header .job-info {
+    display: none;
+    background: black;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    width: 300px;
+}
+header .nav-item:hover .job-info {
+    display: block;
+}
