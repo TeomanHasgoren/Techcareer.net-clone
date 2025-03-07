@@ -167,10 +167,17 @@ h1 {
     }
 }
 /* ABOUT Kısmı*/
-.about {
-    background: #fff;
-    padding: 80px 60px;
-    text-align: center;
+
+.about{
+    background-color: #fff;
+}
+.about-boot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-img,.about-text{
+    padding: 30px;
     font-size: 1.3rem;
 }
 
@@ -178,6 +185,7 @@ span{
     margin-bottom: 40px;
 }
 
+/* Kimler katılabilir*/
 .who_join{
     background-color: #f4f5f7;
     margin: 50px 450px;
@@ -290,4 +298,21 @@ span{
 .owl-carousel{
     width: 1200px;
     margin: auto;
+}
+
+/*Eğitim alanı*/
+
+.education-about{
+    background-color: #575757;
+    font-size: 14px;
+    letter-spacing: 0.17px;
+}
+
+.accordion-header{
+    background-color: #fff !important;
+    --bs-accordion-active-bg: #fff;
+}
+
+.accordion-header h2{
+    color: #000;
 }

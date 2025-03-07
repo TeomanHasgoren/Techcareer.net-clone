@@ -45,11 +45,11 @@ header .nav-item.dropdown:hover .dropdown-menu {
 }
 header .job-info {
     display: none;
-    background: black;
+    background: #1a1a1a;
     color: white;
     padding: 10px;
     position: absolute;
-    width: 300px;
+    width: 400px;
 }
 header .nav-item:hover .job-info {
     display: block;
