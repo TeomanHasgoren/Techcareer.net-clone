@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    
+    <style>
+        *{
+            font-family: "Roboto";
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-3">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="img/logo.jpg" alt=""></a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <form class="d-flex search-form">
+                    <input class="form-control search-box" type="search" placeholder="Etkinlik, İş İlanı, Blog Ara" aria-label="Search">
+                </form>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav d-flex align-items-center">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="etkinliklerDropdown" role="button"><strong>Etkinlikler</strong></a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="bootcamp.html">Bootcamp</a>
+                                <a class="dropdown-item" href="#">Hackathon</a>
+                                <a class="dropdown-item" href="#">Hiring Challenge</a>
+                                <a class="dropdown-item" href="#">Tüm Etkinlikler</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"><strong>İş İlanları</strong></a>
+                            <div class="job-info">Yeni işinle sen de hayalindeki kariyere kavuşabilirsin! Senin için topladığımız iş fırsatlarını şimdi incele!</div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"><strong>Eğitimler</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#"><strong>Testler</strong></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="komuniteDropdown" role="button"><strong>Komünite</strong></a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Komüniteye Katıl</a>
+                                <a class="dropdown-item" href="#">TDC</a>
+                                <a class="dropdown-item" href="#">Blog</a>
+                                <a class="dropdown-item" href="#">Podcast</a>
+                                <a class="dropdown-item" href="#">Kariyer Rehberi</a>
+                                <a class="dropdown-item" href="#">Teknik Sözlük</a>
+                                <a class="dropdown-item" href="#">Mülakat Soruları</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="btn btn-success">Giriş / Üye Ol</a>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="hero-index position-relative">
+        <div class="overlay-content container  d-flex align-items-center"> 
+            <div class="row w-100 align-items-center">
+                <!-- Metin İçeriği -->
+                <div class="col-lg-6 col-md-7 col-12">
+                    <h1 class="fw-bold"><span style="color: #00C26C;">Techcareer.net ile</span> teknoloji kariyerinde hep ileriye</h1>
+                    <p class="lead">
+                        En yenilikçi teknoloji etkinliklerine ve yarışmalarına, heyecan verici iş fırsatlarına, eğitimlere ve yetenek belirleme testlerine ulaşmak için aramıza katıl.
+                    </p>
+                    <button class="btn btn-success btn-lg">Hemen Üye Ol!</button>
+                </div>
+                <!-- Görsel İçeriği -->
+                <div class="col-lg-6 col-md-5 col-12 text-center mt-4 mt-md-0">
+                    <img src="img/image.webp" alt="Bootcamp Icon" class="img-fluid bootcamp-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="index-event">
+        <div class="container">
+            <h2><strong>Etkinliklerimiz</strong></h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <button><strong>Bootcamp</strong></button>
+                    <p>Uzman eğitmenler ile farklı yazılım dillerinde eğitimler alıp, projeler üzerinde çalışarak gerçek dünya tecrübesi edin, kariyerinde hızla yüksel.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <button><strong>Hackathon</strong></button>
+                    <p>Gerçek dünya problemlerine yenilikçi çözümler üretmek için Hackathon'lara katıl!</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <button><strong>Hiring Challenge</strong></button>
+                    <p>Gerçek iş dünyasından görevlerle becerilerini kanıtla, yetenek avcılarının radarına gir ve hayalindeki işe daha hızlı ulaş.</p>
+                </div>
+            </div>
+            <h1 class="text-center mb-4">Başvuru Açık Etkinlikler</h1>
+
+            <!-- Kartlar -->
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/Experian_Young_Talent_Bootcamp.webp" class="card-img-top" alt="Experian Bootcamp">
+                        <div class="card-body">
+                            <h5 class="card-title">Experian Young Talent Bootcamp</h5>
+                            <p class="card-text">Ücretsiz öğren, mezun ol, çalışmaya başla!</p>
+                            <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center mt-3 apply">
+                                <div>
+                                    <p class="mb-0">Son Başvuru:</p>
+                                    <p class="mb-0">6.03.2025</p>
+                                </div>
+                                <a href="#" class="btn btn-success">Başvur</a>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/E2E_API_Automatin&Load_Test_Workshop.webp" class="card-img-top" alt="AI Fundamentals">
+                        <div class="card-body">
+                            <h5 class="card-title">E2E API Automation & Load Test Workshop</h5>
+                            <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
+                            <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center mt-3 apply">
+                                <div>
+                                    <p class="mb-0">Son Başvuru:</p>
+                                    <p class="mb-0">6.03.2025</p>
+                                </div>
+                                <a href="#" class="btn btn-success">Başvur</a>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/Test_Lab_QA_Bootcamp.webp" class="card-img-top" alt="Database Bootcamp">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Lab QA Bootcamp</h5>
+                            <p class="card-text">Ücretsiz öğren, mezun ol, iş fırsatı yakala!</p>
+                            <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center mt-3 apply">
+                                <div>
+                                    <p class="mb-0">Son Başvuru:</p>
+                                    <p class="mb-0">6.03.2025</p>
+                                </div>
+                                <a href="#" class="btn btn-success">Başvur</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="job-title container">
+        
+        <div>
+            <h2>İş ilanları</h2>
+            <p> Teknoloji kariyerinde ilerlemek için doğru yerdesin. Teknoloji iş ilanlarını keşfetmeye hemen başla!</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-lg-4 m-15px-tb">
+                <div class="media box-shadow-only-hover hover-top border-all-1 border-color-gray p-15px">
+                    <a class="overlay-link" href="#"></a>
+                    <div class="icon-50 theme-bg white-color border-radius-50 d-inline-block">
+                        <i class="number">LD</i>
+                    </div>
+                    <div class="p-20px-l media-body"> 
+                        <span class="theme2nd-bg white-color p-0px-tb p-10px-lr font-small border-radius-15">Full time</span>
+                        <h6 class="m-5px-tb">Laravel Developer</h6>
+                        <p class="m-0px font-small">San Francisco, US</p>
+                    </div></div></div><div class="col-sm-6 col-lg-4 m-15px-tb">
+                        <div class="media box-shadow-only-hover hover-top border-all-1 border-color-gray p-15px"> 
+                            <a class="overlay-link" href="#"></a>
+                            <div class="icon-50 pink-bg white-color border-radius-50 d-inline-block"> 
+                                <i class="number">LD</i>
+                            </div>
+                            <div class="p-20px-l media-body"> 
+                                <span class="theme2nd-bg white-color p-0px-tb p-10px-lr font-small border-radius-15">Full time</span>
+                                <h6 class="m-5px-tb">Laravel Developer</h6>
+                                <p class="m-0px font-small">San Francisco, US</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <section class="event education">
+        <div class="container">
+        <h1 class="text-center mb-4">Eğitimlerimiz</h1>
+        <p>Teknoloji sektörüne özel hazırlanan ücretsiz yazılım eğitimlerini takip et, tamamla ve video eğitimler sonunda alacağın sertifikan ile özgeçmişini zenginleştir!</p>
+        <!-- Kartlar -->
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="img/microservis.webp" class="card-img-top" alt="Microservisler ile Modern Yazılım Geliştirme: Teoriden Pratiğe">
+                    <div class="card-body">
+                        <h5 class="card-title">Microservisler ile Modern Yazılım Geliştirme: Teoriden Pratiğe</h5>
+                        <p class="card-author">Hamit Mızrak</p>
+                        <p class="card-text">Modern yazılımların ölçeklenebilir ve esnek geliştirilmesini sağlayan mimari bir yaklaşımdır.</p>
+                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Restful API</span>
+                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Spring Boot</span>
+                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">API</span>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-left align-items-center  ">
+                            <div class="p-2"><p class="mb-0"><img src="img/icon-level-mini-beginner.svg" class="p-0">Başlangıç</p></div>
+                            <div class="p-2"><p class="mb-0"><i class="fa-solid fa-stopwatch"></i>19 Saat</p></div>
+                            <div class="p-2"><p class="mb-0"><i class="fa-solid fa-id-card-clip"></i>var</p></div>
+                        </div>
+                    </div>                        
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="img/devops.webp" class="card-img-top" alt="Yeni Başlayanlar İçin Devops Eğitimi">
+                    <div class="card-body">
+                        <h5 class="card-title">Yeni Başlayanlar İçin Devops Eğitimi</h5>
+                        <p class="card-author">Hamit Mızrak</p>
+                        <p class="card-text">Bu eğitimde, DevOps'un temel prensiplerini ve pratik uygulamalarını öğreneceksiniz.</p>
+                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Devops</span>
+                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Otomasyon</span>
+                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">CICD</span>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-left align-items-center ">
+                            <div class="p-2"><p class="mb-0"><img src="img/icon-level-mini-beginner.svg" class="p-0">Başlangıç</p></div>
+                            <div class="p-2"><p class="mb-0"><i class="fa-solid fa-stopwatch"></i>6 Saat</p></div>
+                            <div class="p-2"><p class="mb-0"><i class="fa-solid fa-id-card-clip"></i>var</p></div>
+                        </div>
+                    </div>                        
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="img/linux.webp" class="card-img-top" alt="Linux Bash Script Eğitimi">
+                    <div class="card-body">
+                        <h5 class="card-title">Yeni Başlayanlar İçin Devops Eğitimi</h5>
+                        <p class="card-author">Hamit Mızrak</p>
+                        <p class="card-text">Linux Bash script, otomasyon ve sistem yönetimini kolaylaştıran güçlü bir betik dilidir.</p>
+                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Linux</span>
+                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bash</span>
+                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Otomasyon</span>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-left align-items-center">
+                            <div class="p-2"><p class="mb-0"><img src="img/icon-level-mini-intermediate.svg" alt="" class="p-1">Orta</p></div>
+                            <div class="p-2"><p class="mb-0"><i class="fa-solid fa-stopwatch"></i>6 Saat </p></div>
+                            <div class="p-2"><p class="mb-0"><i class="fa-solid fa-id-card-clip"></i>var</p></div>
+                        </div>
+                    </div>                        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container event test">
+        <h1 class="text-center mb-4">Testlerimiz</h1>
+        <p>Teknoloji sektörüne özel hazırlanan ücretsiz testler ile teknik yetkinliklerini anında ölç, aldığın puanları özgeçmişine ekle ve bir adım öne çık!</p>
+        <!-- Kartlar -->
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="img/angular.webp" class="card-img-top" alt="Experian Bootcamp">
+                    <div class="card-body">
+                        <h5 class="card-title">Angular Teknik Test (Orta Seviye)</h5>
+                        <p class="card-text">Angular framework'de orta seviye bilgi ve deneyime sahibim ve bunu kanıtlamak istiyorum diyorsan, hemen teste başla.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between align-items-center m-3 ">
+                            <div class="mr-5"><p class="mb-0">Başlangıç </p></div>
+                            <div class="mr-5"><p class="mb-0"><i class="fa-solid fa-stopwatch"></i>6 Saat </p></div>
+                            <div class="mr-5"><p class="mb-0">var</p></div>
+                        </div>
+                    </div>                        
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="img/unity.webp" class="card-img-top" alt="Experian Bootcamp">
+                    <div class="card-body">
+                        <h5 class="card-title">Unity Teknik Test (Orta Seviye)</h5>
+                        <p class="card-text">Unity ile oyun geliştirme özelliklerini etkili şekilde kullanabiliyorum diyorsan bu teknik test tam sana göre.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between align-items-center m-3 ">
+                            <div class="mr-5"><p class="mb-0">Başlangıç </p></div>
+                            <div class="mr-5"><p class="mb-0"><i class="fa-solid fa-stopwatch"></i>6 Saat </p></div>
+                            <div class="mr-5"><p class="mb-0">var</p></div>
+                        </div>
+                    </div>                        
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="img/java.webp" class="card-img-top" alt="Experian Bootcamp">
+                    <div class="card-body">
+                        <h5 class="card-title">Java Teknik Test (Başlangıç Seviye)</h5>
+                        <p class="card-text">Java framwwork'ünde programlama bilgimi ölçmek istiyorum diyorsan, doğru yerdesin. Haydi hemen teste başla!</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between align-items-center m-3 ">
+                            <div class="mr-5"><p class="mb-0">Başlangıç </p></div>
+                            <div class="mr-5"><p class="mb-0"><i class="fa-solid fa-stopwatch"></i>6 Saat </p></div>
+                            <div class="mr-5"><p class="mb-0">var</p></div>
+                        </div>
+                    </div>                        
+                </div>
+            </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>TECHCAREER</h4>
+                
+                <div class="br">
+                    <a href="#">Hakkımızda</a>
+                </div> 
+                <div class="br">
+                    <a href="#">Etkinlikler</a>
+                </div>
+                <div class="br">
+                    <a href="#">Şirketler İçin</a>
+                </div>
+                <div class="br">
+                    <a href="#">Eğitmen Ol</a>
+                </div>
+                <div class="br">
+                    <a href="#">İş Birliği</a>
+                </div>
+                <div class="br">
+                    <a href="#">Referanslar</a>
+                </div>
+                <div class="br">
+                    <a href="#">İletişim</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>BAŞVUR</h4>
+                <div>
+                    <div class="br">
+                        <a href="#">Bootcamp</a>
+                    </div>
+                    <div class="br">
+                        <a href="#">Hackathon</a>
+                    </div>
+                    <div class="br">
+                        <a href="#">Hiring Challenge</a>
+                    </div>
+                    <div class="br">
+                        <a href="#">İş İlanları</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>SENİN İÇİN</h4>
+                <div class="br">
+                    <a href="#">Komünite</a>
+                </div>
+                <div class="br">
+                    <a href="#">TDC</a>
+                </div>
+                <div class="br">
+                    <a href="#">Blog</a>
+                </div>
+                <div class="br">
+                    <a href="#">Podcast</a>
+                </div>
+                <div class="br">
+                    <a href="#">Kariyer Rehberi</a>
+                </div>
+                <div class="br">
+                    <a href="#">Teknik Sözlük</a>
+                </div>
+                <div class="br">
+                    <a href="#">Mülakat Soruları</a>
+                </div>   
+            </div>
+            <div class="footer-section">
+                <h4>VERİ POLİTİKAMIZ</h4>
+                <div class="br">
+                    <a href="#">Aydınlatma Metni</a>
+                </div>
+                <div class="br">
+                    <a href="#">Hizmet Sözleşmesi</a>
+                </div>
+                <div class="br">
+                    <a href="#">Açık Rıza Metni</a>
+                </div>
+                <div class="br">
+                    <a href="#">Çerez Politikası</a>
+                </div>
+            </div>
+            <div class="footer-section footer-social">
+                <img src="img/logo.jpg" alt="" class="logo">
+                <br><br>
+                <p>Türkiye’nin teknoloji kariyeri platformu</p>
+                <br>
+                <h4>Sosyal Medya</h4>
+                <div class="social-icons">
+                    <a href="#"></a><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"></a><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="lang-switch">
+                <button class="active">TR</button>
+                <span></span>
+                <button>EN</button>
+            </div>
+            <div class="copyright">
+                Tüm hakları saklıdır © Copyright 2025 - support@techcareer.net
+            </div>
+        </div>
+        
+        <div class="footer-iskur">
+            <div class="iskur-img">
+                <img src="img/iskur.webp" alt="">
+            </div>
+            <div class="info-text">
+                Kariyer.net Elektronik Yayıncılık ve İletişim Hizmetleri A.Ş. Özel İstihdam Bürosu olarak 31/08/2024 – 30/08/2027 tarihleri arasında faaliyette bulunmak üzere, Türkiye İş Kurumu tarafından 26/07/2024 tarih ve 16398069 sayılı karar uyarınca 170 nolu belge ile faaliyet göstermektedir. 4904 sayılı kanun uyarınca iş arayanlardan ücret alınmayacak ve menfaat temin edilmeyecektir. Şikayetleriniz için aşağıdaki telefon numaralarına başvurabilirsiniz. Türkiye İş Kurumu İstanbul İl Müdürlüğü: 0212 249 29 87 Türkiye iş Kurumu İstanbul Çalışma ve İş Kurumu Ümraniye Hizmet Merkezi : 0216 523 90 26
+            </div>
+        </div>
+        
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</body>
+</html>

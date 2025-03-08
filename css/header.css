@@ -60,6 +60,7 @@ header .job-info {
 }
 header .nav-item:hover .job-info {
     display: block;
+    z-index: 1;
 }
 
 .navbar-collapse{

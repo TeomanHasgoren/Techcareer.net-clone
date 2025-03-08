@@ -333,3 +333,82 @@ span{
 .pagination .page-link {
     color: #000;
 }
+
+/* INDEX*/
+
+/* Hero*/
+.hero-index{
+    display: flex;              /* Flexbox kullanımı */
+    align-items: center;        /* Dikeyde ortalama */
+    justify-content: center;    /* Yatayda ortalama */
+    width: 100%;
+    height: 50vh;
+    background-color: #f8f9fa;
+}
+
+.hero-index .overlay-content {
+    position: relative;
+}
+
+.hero-index .link-content {
+    color: gray;
+    text-decoration: none;
+    padding-top: 40px;
+    font-size: 1.3rem;
+    margin-top: 0;
+}
+.hero-index .link-content a {
+    color: white;
+    text-decoration: none;
+    margin-top: 0px;
+}
+
+.hero-index .link-content a:hover{
+    text-decoration:underline;
+}
+
+.hero-index h1 {
+    font-size: 3rem;
+}
+
+.hero-index .btn-success {
+    background-color: #1dbf73;
+    border: none;
+}
+
+.hero-index .btn-success:hover {
+    background-color: #17a866;
+}
+.hero-index button {
+    background: #00C26D;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+/*Event*/
+
+.index-event{
+    background-color: #fff;
+}
+
+/* Education*/
+.education {
+    background-color: #fff;
+}
+
+.education .card:hover{
+    border: 1px black solid;
+}
+
+.education .card-body{
+    text-align: left;
+    font-size: 16px;
+}
+/* test */
+.test .card:hover{
+    border: 1px black solid;
+}
