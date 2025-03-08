@@ -390,14 +390,66 @@ span{
     margin-top: 20px;
 }
 /*Event*/
-
 .index-event{
     background-color: #fff;
 }
+.toggle-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: 0.3s ease-in-out;
+    border: 1px solid #777;
+}
 
+.toggle-btn:hover,
+.toggle-btn.active {
+    border: 1px solid #000;
+}
+
+.toggle-text {
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 5px;
+    display: block;
+}
+
+/* İlk p elementi açık olacak */
+.toggle-content:first-of-type {
+    display: block;
+}
+.apply-btn {
+    display: inline-block;
+    margin: 20px;
+    font-size: 18px;
+    color: #17a866;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+
+}
+
+.apply-btn i {
+    font-style: normal;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.apply-btn:hover {
+    color: #0056b3;
+}
 /* Education*/
 .education {
     background-color: #fff;
+}
+.education .h1{
+    padding-top: 20px;
 }
 
 .education .card:hover{
@@ -412,3 +464,224 @@ span{
 .test .card:hover{
     border: 1px black solid;
 }
+
+/*Job Listing*/
+
+.intro {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-top: 40px;
+}
+.intro h2 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+}
+.intro p {
+    font-size: 18px;
+    color: #666;
+}
+
+.job-title .container{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.job-listing {
+    width: 32%; /* Her eleman %32 genişliğinde olacak */
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.job-listing:hover{
+    border: 1px solid #000;
+}
+.job-logo {
+    width: 60px;
+    height: 60px;
+    background: #ddd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+.job-details {
+    flex-grow: 1;
+}
+.job-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+.company-name, .job-location {
+    font-size: 14px;
+    color: #666;
+    margin: 2px 0;
+}
+
+.view-all-container {
+    width: 100%;
+    margin-top: 20px;
+}
+.view-all-button {
+    background-color: #f5f5f5; /* Arka planla aynı renk */
+    color: #17a866;
+    border: 1px solid #00C26D;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/*Slider part*/
+
+.main-slider {
+    background-color: #293349;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.main-slider .container {
+    position: relative;
+    width: 80%;
+    width: 1200px; /* Slider'ın genişliği */
+    overflow: hidden;
+}
+
+.main-slider .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+}
+
+.main-slider .slide {
+    min-width: 1200px; /* Her bir resmin genişliği */
+    flex-shrink: 0;
+    position: relative;
+}
+
+.main-slider .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.main-slider .slider-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.main-slider button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.main-slider button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.main-slider .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.main-slider .dot {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.main-slider .dot.active {
+    background-color: #17a866;
+}
+
+.main-slider .dot:hover {
+    background-color: #17a866;
+}
+
+/*Information kısmı*/
+
+.Information {
+    background-color: #f5f5f5; /* Arka plan rengini açık gri yapalım */
+    padding: 40px 0; /* Üst ve alt boşluk ekleyelim */
+}
+.Information .box-body{ 
+    width: 25rem;
+    height: auto;
+}
+.Information .card {
+    background-color: white; /* Kartın arka planı beyaz */
+    padding: 30px !important; /* Kart içindeki boşluk */
+    border-radius: 10px; /* Yuvarlatılmış köşeler */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    display: flex;
+    flex-direction: column; /* Başlık, içerik ve butonu dikey sırada düzenleyelim */
+    justify-content: space-between;
+}
+
+.Information .card h2 {
+    color: black; /* Başlık rengi siyah */
+    font-size: 1.5rem; /* Başlık font boyutu */
+    margin-bottom: 10px; /* Başlık ile içerik arasında boşluk */
+}
+
+.Information .card p {
+    color: #666; /* İçerik rengi gri */
+    font-size: 1rem; /* İçerik font boyutu */
+    margin-bottom: 20px; /* İçerik ile buton arasında boşluk */
+}
+
+.Information .card button {
+    background-color: #00C26D; /* Buton arka plan rengi */
+    color: white; /* Buton yazı rengi beyaz */
+    border: none; /* Buton kenarlıklarını kaldırdık */
+    padding: 10px 20px; /* Buton iç boşluk */
+    border-radius: 5px; /* Buton köşe yuvarlama */
+    cursor: pointer; /* Fareyi buton üzerine getirdiğinde işaretçi şekli */
+    transition: background-color 0.3s ease; /* Renk geçiş animasyonu */
+}
+
+.Information .card:hover {
+    border: 1px solid black;
+}
+
+/*Referances*/
+
+.references-carousel .card-img {
+    display: flex;
+    height: 200px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
