@@ -228,6 +228,7 @@ span{
     padding: 0 !important;
 }
 
+/* testimonial-section */
 .testimonial-section {
     padding: 50px 0;
     background-color: #f8f9fa;
@@ -314,5 +315,21 @@ span{
 }
 
 .accordion-header h2{
+    color: #000;
+}
+
+/* Pagination */
+
+.pagination{
+    --bs-pagination-font-size: 1.5rem;
+    background: transparent gray;
+}
+
+.pagination .page-item:hover{
+    border: 1px solid #00C26C;
+    --bs-pagination-hover-border-color:#00C26C !important;
+}
+
+.pagination .page-link {
     color: #000;
 }

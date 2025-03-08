@@ -15,7 +15,6 @@ header .navbar .container {
     justify-content: space-between;
     align-items: center;
     gap: 30px;
-    max-width: 1250px;
     width: 100%;
 }
 header .search-box {
@@ -39,9 +38,17 @@ header .dropdown-menu {
     background-color: white;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     padding: 10px;
+    border-top: 5px solid #00C26D;
 }
 header .nav-item.dropdown:hover .dropdown-menu {
     display: block;
+}
+header .dropdown-item {
+    font-weight: 600 !important;
+}
+header .dropdown-item:hover {
+    color: #00C26D;
+    
 }
 header .job-info {
     display: none;
