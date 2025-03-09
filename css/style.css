@@ -675,13 +675,161 @@ span{
 
 /*Referances*/
 
-.references-carousel .card-img {
+#references {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+.references-carousel {
     display: flex;
-    height: 200px;
-    width: auto;
+}
+.reference-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 400px; /* Kart genişliği küçültüldü */
+}
+.references-carousel .logo {
+    width: 100%;
+    padding: 15px;
+    background-color: #fff;
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+.references-carousel .logo img {
+    width: 75%;
+    height: 75%;
+    height: auto;
+}
+.references-carousel .quote {
+    max-height: 120px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.references-carousel .employee-name {
+    font-weight: 400;
+    margin-top: 10px;
+}
+.references-carousel .company-name {
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/*Logo alanı*/
+
+.logos {
+    position: relative;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .logos .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    
+  }
+  
+  .logos .background-logos {
+    display: none; /* Başlangıçta görünmeyen logolar */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Arka planda olmasını sağlıyoruz */
+  }
+  
+  .logos .background-logo {
+    width: 100px; /* Arka plandaki logoların genişliği */
+  }
+  
+  .logos .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .logos .logo {
+    flex: 1 0 16.66%;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .logos .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* employer */
+  
+  .employer {
+    background-color: #293349;
+    padding: 40px 0;
+}
+
+.employer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.employer h2, .employer p {
+    color: #fff;
+}
+
+.employer .row {
+    display: flex;
+    justify-content: space-between; /* Elemanlar arasında eşit boşluk sağlar */
+    align-items: center; /* Yatayda ortalamak için */
+}
+
+.employer .text {
+    flex: 1;
+    margin-right: 20px; /* Text alanı ile email arasındaki boşluk */
+}
+
+.employer .email {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px; /* Kenarları yuvarlatmak için */
+    width: 100%;
+    max-width: 500px; /* Email alanına maksimum genişlik */
     
 }
+.employer .email:hover{
+    border: 1px solid #000;
+}
+.employer .email i {
+    margin-right: 10px; /* Icon ile input arasına boşluk */
+}
+
+.employer .email input {
+    border: none;
+    padding: 10px;
+    flex: 1;
+    border-radius: 5px;
+    margin-right: 10px; /* Input ile button arasına boşluk */
+}
+
+.employer .email button {
+    background-color: #00C26D;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
 
 
