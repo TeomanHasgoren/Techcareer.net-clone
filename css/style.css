@@ -338,9 +338,9 @@ span{
 
 /* Hero*/
 .hero-index{
-    display: flex;              /* Flexbox kullanımı */
-    align-items: center;        /* Dikeyde ortalama */
-    justify-content: center;    /* Yatayda ortalama */
+    display: flex;              
+    align-items: center;       
+    justify-content: center;    
     width: 100%;
     height: 50vh;
     background-color: #f8f9fa;
@@ -490,7 +490,7 @@ span{
     justify-content: space-between;
 }
 .job-listing {
-    width: 32%; /* Her eleman %32 genişliğinde olacak */
+    width: 32%; 
     display: flex;
     align-items: center;
     background: white;
@@ -531,7 +531,7 @@ span{
     margin-top: 20px;
 }
 .view-all-button {
-    background-color: #f5f5f5; /* Arka planla aynı renk */
+    background-color: #f5f5f5; 
     color: #17a866;
     border: 1px solid #00C26D;
     padding: 10px 20px;
@@ -555,7 +555,7 @@ span{
 .main-slider .container {
     position: relative;
     width: 80%;
-    width: 1200px; /* Slider'ın genişliği */
+    width: 1200px; 
     overflow: hidden;
 }
 
@@ -566,7 +566,7 @@ span{
 }
 
 .main-slider .slide {
-    min-width: 1200px; /* Her bir resmin genişliği */
+    min-width: 1200px; 
     flex-shrink: 0;
     position: relative;
 }
@@ -630,43 +630,43 @@ span{
 /*Information kısmı*/
 
 .Information {
-    background-color: #f5f5f5; /* Arka plan rengini açık gri yapalım */
-    padding: 40px 0; /* Üst ve alt boşluk ekleyelim */
+    background-color: #f5f5f5; 
+    padding: 40px 0; 
 }
 .Information .box-body{ 
     width: 25rem;
     height: auto;
 }
 .Information .card {
-    background-color: white; /* Kartın arka planı beyaz */
-    padding: 30px !important; /* Kart içindeki boşluk */
-    border-radius: 10px; /* Yuvarlatılmış köşeler */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    background-color: white; 
+    padding: 30px !important; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     display: flex;
-    flex-direction: column; /* Başlık, içerik ve butonu dikey sırada düzenleyelim */
+    flex-direction: column; 
     justify-content: space-between;
 }
 
 .Information .card h2 {
-    color: black; /* Başlık rengi siyah */
-    font-size: 1.5rem; /* Başlık font boyutu */
-    margin-bottom: 10px; /* Başlık ile içerik arasında boşluk */
+    color: black; 
+    font-size: 1.5rem; 
+    margin-bottom: 10px; 
 }
 
 .Information .card p {
-    color: #666; /* İçerik rengi gri */
-    font-size: 1rem; /* İçerik font boyutu */
-    margin-bottom: 20px; /* İçerik ile buton arasında boşluk */
+    color: #666; 
+    font-size: 1rem; 
+    margin-bottom: 20px;
 }
 
 .Information .card button {
-    background-color: #00C26D; /* Buton arka plan rengi */
-    color: white; /* Buton yazı rengi beyaz */
-    border: none; /* Buton kenarlıklarını kaldırdık */
-    padding: 10px 20px; /* Buton iç boşluk */
-    border-radius: 5px; /* Buton köşe yuvarlama */
-    cursor: pointer; /* Fareyi buton üzerine getirdiğinde işaretçi şekli */
-    transition: background-color 0.3s ease; /* Renk geçiş animasyonu */
+    background-color: #00C26D;
+    color: white;
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
 }
 
 .Information .card:hover {
@@ -688,7 +688,7 @@ span{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 400px; /* Kart genişliği küçültüldü */
+    width: 400px; 
 }
 .references-carousel .logo {
     width: 100%;
@@ -737,17 +737,17 @@ span{
   }
   
   .logos .background-logos {
-    display: none; /* Başlangıçta görünmeyen logolar */
+    display: none; 
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1; /* Arka planda olmasını sağlıyoruz */
+    z-index: -1; 
   }
   
   .logos .background-logo {
-    width: 100px; /* Arka plandaki logoların genişliği */
+    width: 100px; 
   }
   
   .logos .row {
@@ -786,13 +786,13 @@ span{
 
 .employer .row {
     display: flex;
-    justify-content: space-between; /* Elemanlar arasında eşit boşluk sağlar */
-    align-items: center; /* Yatayda ortalamak için */
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 .employer .text {
     flex: 1;
-    margin-right: 20px; /* Text alanı ile email arasındaki boşluk */
+    margin-right: 20px; 
 }
 
 .employer .email {
@@ -800,16 +800,16 @@ span{
     align-items: center;
     background-color: #fff;
     padding: 10px 15px;
-    border-radius: 5px; /* Kenarları yuvarlatmak için */
+    border-radius: 5px; 
     width: 100%;
-    max-width: 500px; /* Email alanına maksimum genişlik */
+    max-width: 500px; 
     
 }
 .employer .email:hover{
     border: 1px solid #000;
 }
 .employer .email i {
-    margin-right: 10px; /* Icon ile input arasına boşluk */
+    margin-right: 10px; 
 }
 
 .employer .email input {
@@ -817,7 +817,7 @@ span{
     padding: 10px;
     flex: 1;
     border-radius: 5px;
-    margin-right: 10px; /* Input ile button arasına boşluk */
+    margin-right: 10px; 
 }
 
 .employer .email button {
