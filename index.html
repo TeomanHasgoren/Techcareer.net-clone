@@ -25,11 +25,11 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-3">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg  navbar-light bg-white shadow-sm p-3">
+            <div class="container ">
                 <a class="navbar-brand" href="#"><img src="img/logo.jpg" alt=""></a>
                 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <button class="navbar-toggler" type="button" id="menuToggle">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
@@ -50,7 +50,6 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" href="#"><strong>İş İlanları</strong></a>
-                            <div class="job-info">Yeni işinle sen de hayalindeki kariyere kavuşabilirsin! Senin için topladığımız iş fırsatlarını şimdi incele!</div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" href="#"><strong>Eğitimler</strong></a>
@@ -75,6 +74,31 @@
                 <a href="#" class="btn btn-success">Giriş / Üye Ol</a>
             </div>
         </nav>
+        
+        <div class="overlay" id="overlay"></div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="close-menu" id="closeMenu">&times;</button>
+            <ul>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="etkinliklerDropdown" role="button"><strong>Etkinlikler</strong></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="bootcamp.html">Bootcamp</a>
+                        <a class="dropdown-item" href="#">Hackathon</a>
+                        <a class="dropdown-item" href="#">Hiring Challenge</a>
+                        <a class="dropdown-item" href="#">Tüm Etkinlikler</a>
+                    </div>
+                </li>
+                <li><a href="#"><strong>İş İlanları</strong></a></li>
+                <li><a href="#"><strong>Eğitimler</strong></a></li>
+                <li><a href="#"><strong>Testler</strong></a></li>
+                <li><a href="#"><strong>Komünite</strong></a></li>
+            </ul>
+            <a href="#" class="btn btn-success">Giriş / Üye Ol</a>
+            <div class="language-switcher">
+                <a href="#">TR</a> | <a href="#">ENG</a>
+            </div>
+        </div>
     </header>
     
     <section class="hero-index position-relative">
@@ -839,7 +863,7 @@
             showSlide(currentIndex);
         }, 3000); // Her 3 saniyede bir değişir
     </script>
-
+    <script src="js/header.js"></script>
     Referans kısmı
     <script>
         $(document).ready(function(){

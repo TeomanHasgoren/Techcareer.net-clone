@@ -24,10 +24,11 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm p-3">
-            <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" alt=""></a>   
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <nav class="navbar navbar-expand-lg  navbar-light bg-white shadow-sm p-3">
+            <div class="container ">
+                <a class="navbar-brand" href="#"><img src="img/logo.jpg" alt=""></a>
+                
+                <button class="navbar-toggler" type="button" id="menuToggle">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
@@ -40,7 +41,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-dark" href="#" id="etkinliklerDropdown" role="button"><strong>Etkinlikler</strong></a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Bootcamp</a>
+                                <a class="dropdown-item" href="bootcamp.html">Bootcamp</a>
                                 <a class="dropdown-item" href="#">Hackathon</a>
                                 <a class="dropdown-item" href="#">Hiring Challenge</a>
                                 <a class="dropdown-item" href="#">Tüm Etkinlikler</a>
@@ -48,7 +49,6 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" href="#"><strong>İş İlanları</strong></a>
-                            <div class="job-info">Yeni işinle sen de hayalindeki kariyere kavuşabilirsin! Senin için topladığımız iş fırsatlarını şimdi incele!</div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" href="#"><strong>Eğitimler</strong></a>
@@ -73,6 +73,31 @@
                 <a href="#" class="btn btn-success">Giriş / Üye Ol</a>
             </div>
         </nav>
+        
+        <div class="overlay" id="overlay"></div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="close-menu" id="closeMenu">&times;</button>
+            <ul>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="etkinliklerDropdown" role="button"><strong>Etkinlikler</strong></a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="bootcamp.html">Bootcamp</a>
+                        <a class="dropdown-item" href="#">Hackathon</a>
+                        <a class="dropdown-item" href="#">Hiring Challenge</a>
+                        <a class="dropdown-item" href="#">Tüm Etkinlikler</a>
+                    </div>
+                </li>
+                <li><a href="#"><strong>İş İlanları</strong></a></li>
+                <li><a href="#"><strong>Eğitimler</strong></a></li>
+                <li><a href="#"><strong>Testler</strong></a></li>
+                <li><a href="#"><strong>Komünite</strong></a></li>
+            </ul>
+            <a href="#" class="btn btn-success">Giriş / Üye Ol</a>
+            <div class="language-switcher">
+                <a href="#">TR</a> | <a href="#">ENG</a>
+            </div>
+        </div>
     </header>
     <main>
         <section class="hero position-relative text-white">
@@ -341,614 +366,614 @@
                     </div>           
                 </div>
             </div>
-    </section>
-    <section class="testimonial-section">
-        <h2>Bizi Katılımcılarımızdan Dinle</h2>
-        
-        <!-- Owl Carousel ile dönen 4 katılımcı -->
-        <div class="owl-carousel owl-theme ">
-            <!-- 1. Katılımcı -->
-            <div class="item">
-                <div class="testimonial-card">
-                    <img src="img/user.png" alt="Katılımcı 1">
-                    <div class="testimonial-content">
-                        <div class="testimonial-text">
-                            <p>Angular bootcampine katılmadan önce, Angular konusunda hiç bilgim olmadığını belirtmek isterim. Ancak TeechCareer aracılığıyla Hyper company’nin düzenlediği bu bootcamp, beklentilerimin ötesine geçti. Yoğun bir eğitim programı olmasına rağmen, her bir oturum, kapsamlı bir şekilde Angular’ı öğrenmeme ve uygulamama olanak sağladı. Eğitmenimizin uzmanlığı ve öğretim yöntemleri, karmaşık konuları anlamamı kolaylaştırdı. Bootcamp boyunca, gerçek dünya projelerinde uygulamalı deneyim kazanma fırsatım oldu. Bu, sadece teorik bilgiyi değil, aynı zamanda pratik becerileri de geliştirmeme olanak tanıdı. Eğitimin yoğunluğuna rağmen, her anı keyifli ve öğreticiydi. Eğitmenlerin ve diğer katılımcıların desteğiyle, Angular’ı anlamak ve etkili bir şekilde kullanmak konusunda büyük bir ilerleme kaydettim. Sonuç olarak, bu bootcamp, Angular’ı öğrenmek isteyen herkese şiddetle tavsiye edeceğim bir deneyimdi. Bu değerli deneyim için eğitmenimize, TeechCareer ve Hyper company ekibine çok teşekkür ederim.</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <h4>Melike Aydın</h4>
-                            <span>Tech Recruitment Bootcamp</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- 2. Katılımcı -->
-            <div class="item">
-                <div class="testimonial-card">
-                    <img src="img/user.png" alt="Katılımcı 2">
-                    <div class="testimonial-content">
-                        <div class="testimonial-text">
-                            <p>QA alanında kendimi geliştirmek istediğim bir dönemde Techcareer.net ile tanıştım.
-                                Bootcamp başından sonuna öğretici ve bir o kadar da keyifli bir süreçti. Dönüp ardıma baktığımda gerçekten
-                                büyük yol katettiğimi görüyorum. Techcareer.net ailesine desteklerinden dolayı ve bize sağladığı
-                                samimi ortam için çok teşekkür ederim.</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <h4>Tunahan Kabakçı</h4>
-                            <span>Sigortam.net Software QA Bootcamp</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- 3. Katılımcı -->
-            <div class="item">
-                <div class="testimonial-card">
-                    <img src="img/user.png" alt="Katılımcı 3">
-                    <div class="testimonial-content">
-                        <div class="testimonial-text">
-                            <p>Angular Bootcamp programına katılmak benim için gerçek bir dönüm noktası oldu. Eğitim süreci boyunca edindiğim bilgiler, becerilerimi geliştirmeme ve gerçek dünya projelerinde daha etkili bir şekilde çalışmama olanak tanıdı. Öncelikle, eğitmenlerin uzmanlığı ve öğretme tarzları beni etkileyerek, karmaşık Angular konseptlerini anlamamı sağladı. Derslerin interaktif ve uygulamalı olması, teorik bilgileri hemen pratiğe dökmeme fırsat tanıdı. Ayrıca, gerçek projelerde çalışma şansı bulmak, öğrenilenleri günlük iş süreçlerine entegre etmemde büyük bir rol oynadı. Eğitim sürecinin en değerli yanlarından biri, sadece Angular'ı değil, aynı zamanda genel web geliştirme prensiplerini de öğrenmek oldu. Bu, sadece mevcut teknolojiyi öğrenmekle kalmayıp, aynı zamanda gelecekteki projelerde de daha esnek ve uygulanabilir olmama yardımcı oldu. Programın organizasyonu ve içeriği, katılımcılara kapsamlı bir bakış açısı kazandırdı ve her seviyeden geliştiriciye hitap etti. Ayrıca, eğitim sonrasında sağlanan destek ve kaynaklar, kendi projelerimi geliştirmemde bana rehberlik etti.</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <h4>Baran Emre Bulak</h4>
-                            <span>Hyper Company Front-end Angular Bootcamp</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- 4. Katılımcı -->
-            <div class="item">
-                <div class="testimonial-card">
-                    <img src="img/user.png" alt="Katılımcı 4">
-                    <div class="testimonial-content">
-                        <div class="testimonial-text">
-                            <p>Front-end alanında çıktığım bu yolculukta Techcareer ile tanışmam ve Techcareer ile Hyper Company işbirliği ile düzenlenen bootcampte yer almam benim için unutulmaz bir fırsattı. İş dünyasına adım atmadan önce her önemli konunun değinildiği bu güzel bootcampte daha önce deneyimlemediğim anlar yaşadım. Bununla birlikte benimle aynı heyecanı yaşayan arkadaşlarla ve eğitmenimizle tanışmak benim için anlatılmaz bir duyguydu. Techcareer sayesinde sadece bir eğitimden daha fazlasını edindim. Bu imkanları sunduğu için Techcareer'e ne kadar teşekkür etsem az.</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <h4>Beyzanur Seyhan</h4>
-                            <span>Hyper Company Front-end Angular Bootcamp</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="container event">
-        <h1 class="text-center mb-4">Başvuruya Kapanan Etkinlikler</h1>
-
-
-        
-        <!-- Kartlar -->
-        <div class="row" id="card-container">
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="img/Experian_Young_Talent_Bootcamp.webp" class="card-img-top" alt="Experian Bootcamp">
-                    <div class="card-body">
-                        <h5 class="card-title">Experian Young Talent Bootcamp</h5>
-                        <p class="card-text">Ücretsiz öğren, mezun ol, çalışmaya başla!</p>
-                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    </div>
-                    <div class="card-footer">
-                        <div class="d-flex justify-content-between align-items-center mt-3 apply">
-                            <div>
-                                <p class="mb-0">Son Başvuru:</p>
-                                <p class="mb-0">Başvurular Tamamlandı</p>
-                            </div>
-                            <a href="#" class="btn btn-success">İncele</a>
-                        </div>
-                    </div>                        
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="img/E2E_API_Automatin&Load_Test_Workshop.webp" class="card-img-top" alt="AI Fundamentals">
-                    <div class="card-body">
-                        <h5 class="card-title">E2E API Automation & Load Test Workshop</h5>
-                        <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
-                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    </div>
-                    <div class="card-footer">
-                        <div class="d-flex justify-content-between align-items-center mt-3 apply">
-                            <div>
-                                <p class="mb-0">Son Başvuru:</p>
-                                <p class="mb-0">Başvurular Tamamlandı</p>
-                            </div>
-                            <a href="#" class="btn btn-success">İncele</a>
-                        </div>
-                    </div>                        
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="img/Test_Lab_QA_Bootcamp.webp" class="card-img-top" alt="Database Bootcamp">
-                    <div class="card-body">
-                        <h5 class="card-title">Test Lab QA Bootcamp</h5>
-                        <p class="card-text">Ücretsiz öğren, mezun ol, iş fırsatı yakala!</p>
-                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    </div>
-                    <div class="card-footer">
-                        <div class="d-flex justify-content-between align-items-center mt-3 apply">
-                            <div>
-                                <p class="mb-0">Son Başvuru:</p>
-                                <p class="mb-0">Başvurular Tamamlandı</p>
-                            </div>
-                            <a href="#" class="btn btn-success">İncele</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="img/AI_Fundamentals_With_IBM_Skills_Build_Eğitimi.webp" class="card-img-top" alt="Database Bootcamp">
-                    <div class="card-body">
-                        <h5 class="card-title">AI Fundamentals with IBM SkillsBuild Eğitimi</h5>
-                        <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
-                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    </div>
-                    <div class="card-footer">
-                        <div class="d-flex justify-content-between align-items-center mt-3 apply">
-                            <div>
-                                <p class="mb-0">Son Başvuru:</p>
-                                <p class="mb-0">Başvurular Tamamlandı</p>
-                            </div>
-                            <a href="#" class="btn btn-success">İncele</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="img/Database_Management_Bootcamp_with_MSSQL.webp" class="card-img-top" alt="Database Bootcamp">
-                    <div class="card-body">
-                        <h5 class="card-title">Database Management Bootcamp with MSSQL</h5>
-                        <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
-                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    </div>
-                    <div class="card-footer">
-                        <div class="d-flex justify-content-between align-items-center mt-3 apply">
-                            <div>
-                                <p class="mb-0">Son Başvuru:</p>
-                                <p class="mb-0">Başvurular Tamamlandı</p>
-                            </div>
-                            <a href="#" class="btn btn-success">İncele</a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="img/Web_Crafters.webp" class="card-img-top" alt="Database Bootcamp">
-                    <div class="card-body">
-                        <h5 class="card-title">Web Crafters: The Art of HTML&CSS Workshop</h5>
-                        <p class="card-text">Ücretsiz öğren, mezun ol, iş fırsatı yakala!</p>
-                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    </div>
-                    <div class="card-footer">
-                        <div class="d-flex justify-content-between align-items-center mt-3 apply">
-                            <div>
-                                <p class="mb-0 text-secondary">Son Başvuru:</p>
-                                <p class="mb-0">Başvurular Tamamlandı</p>
-                            </div>
-                            <a href="#" class="btn btn-success">İncele</a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="img/ML_Workshop.webp" class="card-img-top" alt="Database Bootcamp">
-                    <div class="card-body">
-                        <h5 class="card-title">Intro to Machine Learning Workshop</h5>
-                        <p class="card-text">Üniversitelilere özel ücretsiz Eğitim Fırsatını Kaçırma!</p>
-                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">İş Birliği</span>
-                    </div>
-                    <div class="card-footer">
-                        <div class="d-flex justify-content-between align-items-center mt-3 apply">
-                            <div>
-                                <p class="mb-0 text-secondary">Son Başvuru:</p>
-                                <p class="mb-0">Başvurular Tamamlandı</p>
-                            </div>
-                            <a href="#" class="btn btn-success">İncele</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="img/SQL101.webp" class="card-img-top" alt="Database Bootcamp">
-                    <div class="card-body">
-                        <h5 class="card-title">SQL 101: Sıfırdan Başlangıç</h5>
-                        <p class="card-text">Ücretsiz öğren, mezun ol, sertifikaya hak kazan!</p>
-                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    </div>
-                    <div class="card-footer">
-                        <div class="d-flex justify-content-between align-items-center mt-3 apply">
-                            <div>
-                                <p class="mb-0 text-secondary">Son Başvuru:</p>
-                                <p class="mb-0">Başvurular Tamamlandı</p>
-                            </div>
-                            <a href="#" class="btn btn-success">İncele</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="img/Swift_Craft.webp" class="card-img-top" alt="Database Bootcamp">
-                    <div class="card-body">
-                        <h5 class="card-title">SwiftCraft: IOS Development Bootcamp</h5>
-                        <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
-                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    </div>
-                    <div class="card-footer">
-                        <div class="d-flex justify-content-between align-items-center mt-3 apply">
-                            <div>
-                                <p class="mb-0 text-secondary">Son Başvuru:</p>
-                                <p class="mb-0">Başvurular Tamamlandı</p>
-                            </div>
-                            <a href="#" class="btn btn-success">İncele</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="img/Swift_Craft.webp" class="card-img-top" alt="Database Bootcamp">
-                    <div class="card-body">
-                        <h5 class="card-title">SwiftCraft: IOS Development Bootcamp</h5>
-                        <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
-                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    </div>
-                    <div class="card-footer">
-                        <div class="d-flex justify-content-between align-items-center mt-3 apply">
-                            <div>
-                                <p class="mb-0 text-secondary">Son Başvuru:</p>
-                                <p class="mb-0">Başvurular Tamamlandı</p>
-                            </div>
-                            <a href="#" class="btn btn-success">İncele</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="img/Swift_Craft.webp" class="card-img-top" alt="Database Bootcamp">
-                    <div class="card-body">
-                        <h5 class="card-title">SwiftCraft: IOS Development Bootcamp</h5>
-                        <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
-                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    </div>
-                    <div class="card-footer">
-                        <div class="d-flex justify-content-between align-items-center mt-3 apply">
-                            <div>
-                                <p class="mb-0 text-secondary">Son Başvuru:</p>
-                                <p class="mb-0">Başvurular Tamamlandı</p>
-                            </div>
-                            <a href="#" class="btn btn-success">İncele</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="img/Swift_Craft.webp" class="card-img-top" alt="Database Bootcamp">
-                    <div class="card-body">
-                        <h5 class="card-title">SwiftCraft: IOS Development Bootcamp</h5>
-                        <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
-                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    </div>
-                    <div class="card-footer">
-                        <div class="d-flex justify-content-between align-items-center mt-3 apply">
-                            <div>
-                                <p class="mb-0 text-secondary">Son Başvuru:</p>
-                                <p class="mb-0">Başvurular Tamamlandı</p>
-                            </div>
-                            <a href="#" class="btn btn-success">İncele</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="img/Swift_Craft.webp" class="card-img-top" alt="Database Bootcamp">
-                    <div class="card-body">
-                        <h5 class="card-title">SwiftCraft: IOS Development Bootcamp</h5>
-                        <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
-                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    </div>
-                    <div class="card-footer">
-                        <div class="d-flex justify-content-between align-items-center mt-3 apply">
-                            <div>
-                                <p class="mb-0 text-secondary">Son Başvuru:</p>
-                                <p class="mb-0">Başvurular Tamamlandı</p>
-                            </div>
-                            <a href="#" class="btn btn-success">İncele</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="img/Swift_Craft.webp" class="card-img-top" alt="Database Bootcamp">
-                    <div class="card-body">
-                        <h5 class="card-title">SwiftCraft: IOS Development Bootcamp</h5>
-                        <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
-                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    </div>
-                    <div class="card-footer">
-                        <div class="d-flex justify-content-between align-items-center mt-3 apply">
-                            <div>
-                                <p class="mb-0 text-secondary">Son Başvuru:</p>
-                                <p class="mb-0">Başvurular Tamamlandı</p>
-                            </div>
-                            <a href="#" class="btn btn-success">İncele</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="img/Swift_Craft.webp" class="card-img-top" alt="Database Bootcamp">
-                    <div class="card-body">
-                        <h5 class="card-title">SwiftCraft: IOS Development Bootcamp</h5>
-                        <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
-                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    </div>
-                    <div class="card-footer">
-                        <div class="d-flex justify-content-between align-items-center mt-3 apply">
-                            <div>
-                                <p class="mb-0 text-secondary">Son Başvuru:</p>
-                                <p class="mb-0">Başvurular Tamamlandı</p>
-                            </div>
-                            <a href="#" class="btn btn-success">İncele</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="img/Swift_Craft.webp" class="card-img-top" alt="Database Bootcamp">
-                    <div class="card-body">
-                        <h5 class="card-title">SwiftCraft: IOS Development Bootcamp</h5>
-                        <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
-                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    </div>
-                    <div class="card-footer">
-                        <div class="d-flex justify-content-between align-items-center mt-3 apply">
-                            <div>
-                                <p class="mb-0 text-secondary">Son Başvuru:</p>
-                                <p class="mb-0">Başvurular Tamamlandı</p>
-                            </div>
-                            <a href="#" class="btn btn-success">İncele</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="img/Swift_Craft.webp" class="card-img-top" alt="Database Bootcamp">
-                    <div class="card-body">
-                        <h5 class="card-title">SwiftCraft: IOS Development Bootcamp</h5>
-                        <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
-                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    </div>
-                    <div class="card-footer">
-                        <div class="d-flex justify-content-between align-items-center mt-3 apply">
-                            <div>
-                                <p class="mb-0 text-secondary">Son Başvuru:</p>
-                                <p class="mb-0">Başvurular Tamamlandı</p>
-                            </div>
-                            <a href="#" class="btn btn-success">İncele</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="img/Swift_Craft.webp" class="card-img-top" alt="Database Bootcamp">
-                    <div class="card-body">
-                        <h5 class="card-title">SwiftCraft: IOS Development Bootcamp</h5>
-                        <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
-                        <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
-                    </div>
-                    <div class="card-footer">
-                        <div class="d-flex justify-content-between align-items-center mt-3 apply">
-                            <div>
-                                <p class="mb-0 text-secondary">Son Başvuru:</p>
-                                <p class="mb-0">Başvurular Tamamlandı</p>
-                            </div>
-                            <a href="#" class="btn btn-success">İncele</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <nav aria-label="Page navigation ">
-            <ul class="pagination justify-content-center">
-              <li class="page-item disabled prev">
-                <a class="page-link" tabindex="-1"> < </a>
-              </li>
-              <li class="page-item"><a class="page-link" >1</a></li>
-              <li class="page-item"><a class="page-link" >2</a></li>
-              <li class="page-item"><a class="page-link" >3</a></li>
-              <li class="page-item next">
-                <a class="page-link"> > </a>
-              </li>
-            </ul>
-          </nav>
-    </section>
-    <section class="container education_about">
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" id="accordionToggle" aria-expanded="false" aria-controls="collapseOne">
-                    <h2>Bootcamp Eğitimleri Hakkında</h2>
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
-                <div class="accordion-body ">
-                    <p><strong>Bootcamp</strong>, yoğun ve hızlı bir şekilde belirli bir beceri veya konuda eğitim almak için düzenlenen bir programdır. Bu programlar, katılımcılara genellikle kısa bir süre içinde yoğun bir eğitim sunarak onları hızlıca iş dünyasına hazırlar. Bir bootcamp programı, uzman eğitmenler tarafından yönlendirilir ve katılımcılara pratik beceriler kazandırmayı hedefler. Eğitim süreci genellikle grup çalışmaları, proje tabanlı öğrenme ve atölye çalışmaları gibi interaktif yöntemleri içerir. Bu şekilde, katılımcılar teorik bilgiyi uygulamaya dökebilir ve gerçek dünya senaryolarına uygun çözümler üretebilir. Genellikle tam zamanlı bir program olarak tasarlanır ve katılımcılar, sürekli ödevler ve projeler üzerinde çalışarak kendilerini geliştirir. Bootcamp’lerin avantajları arasında hızlı öğrenme, pratik deneyim kazanma, endüstri uzmanlarından direkt geri bildirim alma ve kariyer fırsatlarına erişim sağlama yer alır. Bu programlar, özellikle hızla büyüyen teknoloji sektöründe istihdam edilmek isteyenler için popüler bir seçenektir. Bootcamp programları, sadece eğitim sunmanın ötesine geçerek katılımcılara birçok avantaj sağlar. Öncelikle, bootcamp eğitimi genellikle iş dünyasının taleplerine uygun olarak tasarlanır. İşverenler, bootcamp mezunlarının hızlı bir şekilde uygulama becerileri geliştirdiğini ve gerçek dünya projelerinde çalışmaya hazır olduklarını fark eder. Bu nedenle bootcamp mezunları, iş başvurularında diğer adaylardan ayrışabilir ve rekabet avantajı elde edebilir. Bootcamp programları, katılımcılara hızlı ve etkili bir şekilde belirli bir beceri veya konuda eğitim alma imkanı sunar.</p>
-
-                    <h5><strong>Bootcamp'te Hangi Konular Üzerine Eğitim Verilir?</strong></h5>
-                    <p><strong>Bootcamp nedir</strong> sorusu genellikle belirli becerileri kazanmak veya mesleki yetkinlikleri geliştirmek amacıyla düzenlenen programlar bütünü olarak cevaplanır. <strong>Bootcamp programları</strong> çeşitli konular üzerine eğitim verirken özellikle teknoloji ve dijital alanlarında yoğunlaşır. Bu programlarda eğitimi verilen bazı konular vardır. Yazılım geliştirme bunlardan ilkidir. Birçok <strong>yazılım bootcamp</strong>, farklı programlama dilleri ve geliştirme araçları üzerine eğitim sunar. Katılımcılara temel programlama becerilerini öğretirken; web geliştirme, mobil uygulama geliştirme veya veri tabanı yönetimi gibi alanlarda da derinlemesine bilgi sağlar. Bunun yanında <strong>ücretsiz yazılım bootcamp'leri</strong>, yazılım becerilerini geliştirmek isteyenler için erişilebilir bir seçenektir. Katılımcılar, maliyet faktörünü dikkate almadan yazılım alanında kendini geliştirme fırsatı bulur. <strong>Ücretsiz yazılım eğitimine</strong> katılarak siber güvenlik programları, siber saldırılara karşı koruma stratejileri ve ağ güvenliği, etik hackerlık (ethical hacking) ve veri güvenliği gibi konularda eğitim alabilirsiniz. Bunlara ek olarak <strong>bootcamp coding</strong> eğitimi, genellikle farklı programlama dilleri ve teknolojileri üzerine odaklanır. Bunlar arasında popüler diller ve framework'ler şunlar olabilir: Python, JavaScript, Ruby, Java, C#, .NET, PHP, HTML/CSS gibi. Eğitim süreci, katılımcıların temel programlama kavramlarını öğrenmelerini ve pratik becerilerini geliştirmelerini sağlar. Bootcamp programları, bahsedilenlerden farklı konular üzerine de eğitim verebilir. Dijital tasarım, yapay zeka, proje yönetimi, cloud computing ve iş analitiği gibi konular da Bootcamp'ların odaklandığı alanlar arasında yer alabilir. Bootcamp'ların sunduğu konular, genellikle iş dünyasının taleplerine ve sektörel ihtiyaçlara göre şekillenir.</p>
-
-                    <h5><strong>Bootcamp’e Nasıl Başvuru Yapılır?</strong></h5>
-                    <p><strong>Bootcamp başvuru</strong> süreci, program sağlayıcısının belirlediği prosedürlere ve gerekliliklere bağlı olarak değişebilir. Genel olarak bazı adımlar takip edilerek bir bootcamp programına başvurulabilir.</p>
-                    <ul>
-                        <li>İlgilenilen <strong>bootcamp kursları</strong> araştırılabilir. Programların içeriği, süresi, maliyeti, eğitmen kadrosu ve mezunların geri bildirimleri incelenerek en uygun olan belirlenebilir.</li>
-                        <li>Seçilen bootcamp programının başvuru şartları dikkatlice okunabilir. Genellikle bu şartlar, yaş sınırları, dil becerileri, ön koşullar veya önceki deneyim gereklilikleri gibi faktörleri içerir.</li>
-                        <li>Bootcamp programının resmi web sitesi veya başvuru portalı üzerinden <strong>online bootcamp</strong> başvuru formunu doldurulabilir. Form genellikle kişisel bilgileri, eğitim geçmişi, motivasyonu ve varsa önceki deneyimleri içerir.</li>
-                        <li>Bazı bootcamp programları başvuru ücreti talep edebilir. Başvurunun tamamlanması için gerekli olan ücreti ödenebilir. Bu ücret, başvurunun değerlendirilmesi ve değerlendirme süreci için kullanılır. <strong>Bootcamp ücretsiz</strong> başvuruları için de ekstra kontroller yapılabilir, buna göre başvuruda bulunulabilir.</li>
-                        <li>Başvurunun incelenmesi ve değerlendirilmesi süreci tamamlanabilir. Bu süreç, başvurudaki bilgilerin doğruluğunu ve uygunluğunu kontrol edebilir, gerekirse mülakat veya sınav gibi ek adımları içerebilir.</li>
-                        <li>Başvurunun başarılı olması halinde, program sağlayıcısı bir kabul teklifi yapar. Kabul edilirse, kayıt işlemleri tamamlanarak bootcamp programına katılmaya hak kazanılır. Başvuru reddedildiğinde ise geri bildirim alabilir ve başka bir programa veya başka bir döneme başvurulabilir.</li>
-                    </ul>
-
-                    <h5><strong>Türkiye’de Bootcamp Programları</strong></h5>
-                    <p>
-                        Türkiye'de <strong>bootcampprogramları</strong>, hızlı ve yoğun bir şekilde mesleki beceri ve yetkinlikleri geliştirmek için tasarlanmış eğitim programlarıdır. Bu programlar genellikle kısa süreli, pratik odaklı ve yoğun bir şekilde gerçekleştirilir. Bootcamp programları özellikle teknoloji sektöründe, yazılım geliştirme, veri analitiği, dijital pazarlama, yapay zeka ve girişimcilik gibi alanlarda popülerdir. Türkiye'de çeşitli bootcamp programları bulunur ve birçok eğitim kurumu, teknoloji şirketi veya girişim tarafından sunulur. Bu programlar genellikle iş birliği içinde çalışan eğitmenler, mentörler ve sektör profesyonelleri tarafından desteklenir. Programlar genellikle gerçek dünya projeleri üzerinde çalışma fırsatı sunar ve öğrencilerin pratik deneyim kazanmalarını sağlar. Türkiye'de bootcamp programlarının sıklığı son yıllarda önemli ölçüde artış gösterir. Teknoloji sektöründeki hızlı gelişmeler, iş dünyasının ihtiyaçları ve yetenekli çalışan arayışı, bootcamp programlarının popülerliğini artırır. Özellikle büyük şehirlerde, İstanbul, Ankara ve İzmir gibi, birçok bootcamp programı düzenlenir. Bootcamp programlarının sıklığı, birkaç faktöre bağlı olarak değişebilir. Öncelikle, programları düzenleyen eğitim kurumları veya kuruluşların sayısı etkili olur. Aynı zamanda, bootcamp programlarının sıklığı, sektör talepleri ve işgücü piyasasındaki ihtiyaçlara bağlıdır. Teknoloji sektöründeki hızlı büyüme ve talep, özellikle yazılım geliştirme gibi alanlarda bootcamp programlarının düzenlenmesini teşvik eder. Bu noktada ücretsiz yazılım eğitimine katılarak kendinizi geliştirebilir ve sektörel yenilikleri takip edebilirsiniz. Türkiye'de bootcamp programlarının sıklığı, teknoloji sektöründeki talepler ve işgücü ihtiyaçlarına bağlı olarak artar. Birçok eğitim kurumu ve şirket, bu tür programları düzenlemekte ve çeşitli dönemlerde katılımcılara sunar. Özellikle büyük şehirlerde bootcamp programlarına erişim daha yaygındır.
-                    </p>
-
-                    <h5><strong>Bootcamp eğitimi ne kadar sürer?</strong></h5>
-                    <p>Bootcamp programlarının süresi, konusu ve içeriğine bağlı olarak değişebilir. Birkaç haftadan birkaç aya kadar değişen programlar mevcuttur. Genellikle bootcamp eğitimi oldukça yoğun ve katılımcıların günlük olarak düzenli bir şekilde katılım göstermesini gerektirir. Program süresi boyunca, katılımcılar genellikle uzmanlar tarafından yönlendirilen sınıf içi dersler, atölye çalışmaları ve proje tabanlı çalışmalar gibi farklı öğrenme yöntemlerini deneyimler.</p>
-
-                    <h5><strong>Bootcamp nedir ve nasıl işler?</strong></h5>
-                    <p>Bootcamp, katılımcılara belirli bir süre içinde yoğun ve odaklı bir şekilde belirli bir konuda eğitim veren hızlandırılmış bir öğrenme programıdır. Bu tür programlar genellikle yazılım geliştirme, veri bilimi, dijital pazarlama gibi teknik veya sektörel alanlarda düzenlenir. Katılımcılar, yoğun çalışma saatleri boyunca uzman eğitmenler tarafından yönlendirilir ve gerçek projeler üzerinde pratik yapma fırsatı bulurlar</p>
-
-                    <h5><strong>Ücretsiz bootcamp’ler var mı?</strong></h5>
-                    <p>Evet, bazı bootcamp programları ücretsiz olabilir. Ücretsiz bootcampler, katılımcılara belirli bir konuda eğitim ve beceri geliştirme fırsatı sunarken, herhangi bir mali yükümlülük veya ücret talep etmezler. Ücretsiz bootcamplere katılım genellikle daha geniş bir kitleye erişim sağlamak ve eğitim fırsatlarından daha fazla kişinin yararlanmasını sağlamak amacıyla düzenlenir.</p>
-
-                    <h5><strong>Bootcamp'lerde sertifika verilir mi?</strong></h5>
-                    <p>Evet, çoğu bootcamp programı başarıyla tamamlayan katılımcılara bir sertifika verir. Bootcamp sertifikaları, katılımcının belirli bir konuda yoğun bir eğitim aldığını ve belirli becerileri kazandığını doğrular. Bu sertifikalar, işverenler için değerli olabilir ve katılımcıların CV'lerine ve LinkedIn profillerine ekleyerek kariyerlerindeki fırsatları artırabilir. Ancak, sertifikanın değeri, bootcamp'ın itibarı ve içeriği ile birlikte değerlendirilmelidir. Bazı bootcamp programları, endüstri tarafından tanınan sertifikalara sahip olabilirken, diğerleri sadece programı tamamlama sertifikası sunabilir. Katılımcıların, kendileri için en uygun bootcamp programını seçerken sertifika verme politikalarını dikkate almaları önemlidir.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-    </section>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-container">
-                <div class="footer-section">
-                    <h4>TECHCAREER</h4>
-                    
-                    <div class="br">
-                        <a href="#">Hakkımızda</a>
-                    </div> 
-                    <div class="br">
-                        <a href="#">Etkinlikler</a>
-                    </div>
-                    <div class="br">
-                        <a href="#">Şirketler İçin</a>
-                    </div>
-                    <div class="br">
-                        <a href="#">Eğitmen Ol</a>
-                    </div>
-                    <div class="br">
-                        <a href="#">İş Birliği</a>
-                    </div>
-                    <div class="br">
-                        <a href="#">Referanslar</a>
-                    </div>
-                    <div class="br">
-                        <a href="#">İletişim</a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>BAŞVUR</h4>
-                    <div>
-                        <div class="br">
-                            <a href="bootcamp.html">Bootcamp</a>
-                        </div>
-                        <div class="br">
-                            <a href="hackathon.html">Hackathon</a>
-                        </div>
-                        <div class="br">
-                            <a href="#">Hiring Challenge</a>
-                        </div>
-                        <div class="br">
-                            <a href="#">İş İlanları</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>SENİN İÇİN</h4>
-                    <div class="br">
-                        <a href="#">Komünite</a>
-                    </div>
-                    <div class="br">
-                        <a href="#">TDC</a>
-                    </div>
-                    <div class="br">
-                        <a href="#">Blog</a>
-                    </div>
-                    <div class="br">
-                        <a href="#">Podcast</a>
-                    </div>
-                    <div class="br">
-                        <a href="#">Kariyer Rehberi</a>
-                    </div>
-                    <div class="br">
-                        <a href="#">Teknik Sözlük</a>
-                    </div>
-                    <div class="br">
-                        <a href="#">Mülakat Soruları</a>
-                    </div>   
-                </div>
-                <div class="footer-section">
-                    <h4>VERİ POLİTİKAMIZ</h4>
-                    <div class="br">
-                        <a href="#">Aydınlatma Metni</a>
-                    </div>
-                    <div class="br">
-                        <a href="#">Hizmet Sözleşmesi</a>
-                    </div>
-                    <div class="br">
-                        <a href="#">Açık Rıza Metni</a>
-                    </div>
-                    <div class="br">
-                        <a href="#">Çerez Politikası</a>
-                    </div>
-                </div>
-                <div class="footer-section footer-social">
-                    <img src="img/logo.jpg" alt="" class="logo">
-                    <br><br>
-                    <p>Türkiye’nin teknoloji kariyeri platformu</p>
-                    <br>
-                    <h4>Sosyal Medya</h4>
-                    <div class="social-icons">
-                        <a href="#"></a><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"></a><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="lang-switch">
-                    <button class="active">TR</button>
-                    <span></span>
-                    <button>EN</button>
-                </div>
-                <div class="copyright">
-                    Tüm hakları saklıdır © Copyright 2025 - support@techcareer.net
-                </div>
-            </div>
+        </section>
+        <section class="testimonial-section">
+            <h2>Bizi Katılımcılarımızdan Dinle</h2>
             
-            <div class="footer-iskur">
-                <div class="iskur-img">
-                    <img src="img/iskur.webp" alt="">
+            <!-- Owl Carousel ile dönen 4 katılımcı -->
+            <div class="owl-carousel owl-theme ">
+                <!-- 1. Katılımcı -->
+                <div class="item">
+                    <div class="testimonial-card">
+                        <img src="img/user.png" alt="Katılımcı 1">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                <p>Angular bootcampine katılmadan önce, Angular konusunda hiç bilgim olmadığını belirtmek isterim. Ancak TeechCareer aracılığıyla Hyper company’nin düzenlediği bu bootcamp, beklentilerimin ötesine geçti. Yoğun bir eğitim programı olmasına rağmen, her bir oturum, kapsamlı bir şekilde Angular’ı öğrenmeme ve uygulamama olanak sağladı. Eğitmenimizin uzmanlığı ve öğretim yöntemleri, karmaşık konuları anlamamı kolaylaştırdı. Bootcamp boyunca, gerçek dünya projelerinde uygulamalı deneyim kazanma fırsatım oldu. Bu, sadece teorik bilgiyi değil, aynı zamanda pratik becerileri de geliştirmeme olanak tanıdı. Eğitimin yoğunluğuna rağmen, her anı keyifli ve öğreticiydi. Eğitmenlerin ve diğer katılımcıların desteğiyle, Angular’ı anlamak ve etkili bir şekilde kullanmak konusunda büyük bir ilerleme kaydettim. Sonuç olarak, bu bootcamp, Angular’ı öğrenmek isteyen herkese şiddetle tavsiye edeceğim bir deneyimdi. Bu değerli deneyim için eğitmenimize, TeechCareer ve Hyper company ekibine çok teşekkür ederim.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <h4>Melike Aydın</h4>
+                                <span>Tech Recruitment Bootcamp</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="info-text">
-                    Kariyer.net Elektronik Yayıncılık ve İletişim Hizmetleri A.Ş. Özel İstihdam Bürosu olarak 31/08/2024 – 30/08/2027 tarihleri arasında faaliyette bulunmak üzere, Türkiye İş Kurumu tarafından 26/07/2024 tarih ve 16398069 sayılı karar uyarınca 170 nolu belge ile faaliyet göstermektedir. 4904 sayılı kanun uyarınca iş arayanlardan ücret alınmayacak ve menfaat temin edilmeyecektir. Şikayetleriniz için aşağıdaki telefon numaralarına başvurabilirsiniz. Türkiye İş Kurumu İstanbul İl Müdürlüğü: 0212 249 29 87 Türkiye iş Kurumu İstanbul Çalışma ve İş Kurumu Ümraniye Hizmet Merkezi : 0216 523 90 26
+                <!-- 2. Katılımcı -->
+                <div class="item">
+                    <div class="testimonial-card">
+                        <img src="img/user.png" alt="Katılımcı 2">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                <p>QA alanında kendimi geliştirmek istediğim bir dönemde Techcareer.net ile tanıştım.
+                                    Bootcamp başından sonuna öğretici ve bir o kadar da keyifli bir süreçti. Dönüp ardıma baktığımda gerçekten
+                                    büyük yol katettiğimi görüyorum. Techcareer.net ailesine desteklerinden dolayı ve bize sağladığı
+                                    samimi ortam için çok teşekkür ederim.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <h4>Tunahan Kabakçı</h4>
+                                <span>Sigortam.net Software QA Bootcamp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3. Katılımcı -->
+                <div class="item">
+                    <div class="testimonial-card">
+                        <img src="img/user.png" alt="Katılımcı 3">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                <p>Angular Bootcamp programına katılmak benim için gerçek bir dönüm noktası oldu. Eğitim süreci boyunca edindiğim bilgiler, becerilerimi geliştirmeme ve gerçek dünya projelerinde daha etkili bir şekilde çalışmama olanak tanıdı. Öncelikle, eğitmenlerin uzmanlığı ve öğretme tarzları beni etkileyerek, karmaşık Angular konseptlerini anlamamı sağladı. Derslerin interaktif ve uygulamalı olması, teorik bilgileri hemen pratiğe dökmeme fırsat tanıdı. Ayrıca, gerçek projelerde çalışma şansı bulmak, öğrenilenleri günlük iş süreçlerine entegre etmemde büyük bir rol oynadı. Eğitim sürecinin en değerli yanlarından biri, sadece Angular'ı değil, aynı zamanda genel web geliştirme prensiplerini de öğrenmek oldu. Bu, sadece mevcut teknolojiyi öğrenmekle kalmayıp, aynı zamanda gelecekteki projelerde de daha esnek ve uygulanabilir olmama yardımcı oldu. Programın organizasyonu ve içeriği, katılımcılara kapsamlı bir bakış açısı kazandırdı ve her seviyeden geliştiriciye hitap etti. Ayrıca, eğitim sonrasında sağlanan destek ve kaynaklar, kendi projelerimi geliştirmemde bana rehberlik etti.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <h4>Baran Emre Bulak</h4>
+                                <span>Hyper Company Front-end Angular Bootcamp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4. Katılımcı -->
+                <div class="item">
+                    <div class="testimonial-card">
+                        <img src="img/user.png" alt="Katılımcı 4">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                <p>Front-end alanında çıktığım bu yolculukta Techcareer ile tanışmam ve Techcareer ile Hyper Company işbirliği ile düzenlenen bootcampte yer almam benim için unutulmaz bir fırsattı. İş dünyasına adım atmadan önce her önemli konunun değinildiği bu güzel bootcampte daha önce deneyimlemediğim anlar yaşadım. Bununla birlikte benimle aynı heyecanı yaşayan arkadaşlarla ve eğitmenimizle tanışmak benim için anlatılmaz bir duyguydu. Techcareer sayesinde sadece bir eğitimden daha fazlasını edindim. Bu imkanları sunduğu için Techcareer'e ne kadar teşekkür etsem az.</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <h4>Beyzanur Seyhan</h4>
+                                <span>Hyper Company Front-end Angular Bootcamp</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </section>
+
+        <section class="container event">
+            <h1 class="text-center mb-4">Başvuruya Kapanan Etkinlikler</h1>
+
+
+            
+            <!-- Kartlar -->
+            <div class="row" id="card-container">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/Experian_Young_Talent_Bootcamp.webp" class="card-img-top" alt="Experian Bootcamp">
+                        <div class="card-body">
+                            <h5 class="card-title">Experian Young Talent Bootcamp</h5>
+                            <p class="card-text">Ücretsiz öğren, mezun ol, çalışmaya başla!</p>
+                            <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center mt-3 apply">
+                                <div>
+                                    <p class="mb-0">Son Başvuru:</p>
+                                    <p class="mb-0">Başvurular Tamamlandı</p>
+                                </div>
+                                <a href="#" class="btn btn-success">İncele</a>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/E2E_API_Automatin&Load_Test_Workshop.webp" class="card-img-top" alt="AI Fundamentals">
+                        <div class="card-body">
+                            <h5 class="card-title">E2E API Automation & Load Test Workshop</h5>
+                            <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
+                            <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center mt-3 apply">
+                                <div>
+                                    <p class="mb-0">Son Başvuru:</p>
+                                    <p class="mb-0">Başvurular Tamamlandı</p>
+                                </div>
+                                <a href="#" class="btn btn-success">İncele</a>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/Test_Lab_QA_Bootcamp.webp" class="card-img-top" alt="Database Bootcamp">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Lab QA Bootcamp</h5>
+                            <p class="card-text">Ücretsiz öğren, mezun ol, iş fırsatı yakala!</p>
+                            <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center mt-3 apply">
+                                <div>
+                                    <p class="mb-0">Son Başvuru:</p>
+                                    <p class="mb-0">Başvurular Tamamlandı</p>
+                                </div>
+                                <a href="#" class="btn btn-success">İncele</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/AI_Fundamentals_With_IBM_Skills_Build_Eğitimi.webp" class="card-img-top" alt="Database Bootcamp">
+                        <div class="card-body">
+                            <h5 class="card-title">AI Fundamentals with IBM SkillsBuild Eğitimi</h5>
+                            <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
+                            <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center mt-3 apply">
+                                <div>
+                                    <p class="mb-0">Son Başvuru:</p>
+                                    <p class="mb-0">Başvurular Tamamlandı</p>
+                                </div>
+                                <a href="#" class="btn btn-success">İncele</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/Database_Management_Bootcamp_with_MSSQL.webp" class="card-img-top" alt="Database Bootcamp">
+                        <div class="card-body">
+                            <h5 class="card-title">Database Management Bootcamp with MSSQL</h5>
+                            <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
+                            <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center mt-3 apply">
+                                <div>
+                                    <p class="mb-0">Son Başvuru:</p>
+                                    <p class="mb-0">Başvurular Tamamlandı</p>
+                                </div>
+                                <a href="#" class="btn btn-success">İncele</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/Web_Crafters.webp" class="card-img-top" alt="Database Bootcamp">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Crafters: The Art of HTML&CSS Workshop</h5>
+                            <p class="card-text">Ücretsiz öğren, mezun ol, iş fırsatı yakala!</p>
+                            <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center mt-3 apply">
+                                <div>
+                                    <p class="mb-0 text-secondary">Son Başvuru:</p>
+                                    <p class="mb-0">Başvurular Tamamlandı</p>
+                                </div>
+                                <a href="#" class="btn btn-success">İncele</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/ML_Workshop.webp" class="card-img-top" alt="Database Bootcamp">
+                        <div class="card-body">
+                            <h5 class="card-title">Intro to Machine Learning Workshop</h5>
+                            <p class="card-text">Üniversitelilere özel ücretsiz Eğitim Fırsatını Kaçırma!</p>
+                            <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                            <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">İş Birliği</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center mt-3 apply">
+                                <div>
+                                    <p class="mb-0 text-secondary">Son Başvuru:</p>
+                                    <p class="mb-0">Başvurular Tamamlandı</p>
+                                </div>
+                                <a href="#" class="btn btn-success">İncele</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/SQL101.webp" class="card-img-top" alt="Database Bootcamp">
+                        <div class="card-body">
+                            <h5 class="card-title">SQL 101: Sıfırdan Başlangıç</h5>
+                            <p class="card-text">Ücretsiz öğren, mezun ol, sertifikaya hak kazan!</p>
+                            <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center mt-3 apply">
+                                <div>
+                                    <p class="mb-0 text-secondary">Son Başvuru:</p>
+                                    <p class="mb-0">Başvurular Tamamlandı</p>
+                                </div>
+                                <a href="#" class="btn btn-success">İncele</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/Swift_Craft.webp" class="card-img-top" alt="Database Bootcamp">
+                        <div class="card-body">
+                            <h5 class="card-title">SwiftCraft: IOS Development Bootcamp</h5>
+                            <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
+                            <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center mt-3 apply">
+                                <div>
+                                    <p class="mb-0 text-secondary">Son Başvuru:</p>
+                                    <p class="mb-0">Başvurular Tamamlandı</p>
+                                </div>
+                                <a href="#" class="btn btn-success">İncele</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/Swift_Craft.webp" class="card-img-top" alt="Database Bootcamp">
+                        <div class="card-body">
+                            <h5 class="card-title">SwiftCraft: IOS Development Bootcamp</h5>
+                            <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
+                            <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center mt-3 apply">
+                                <div>
+                                    <p class="mb-0 text-secondary">Son Başvuru:</p>
+                                    <p class="mb-0">Başvurular Tamamlandı</p>
+                                </div>
+                                <a href="#" class="btn btn-success">İncele</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/Swift_Craft.webp" class="card-img-top" alt="Database Bootcamp">
+                        <div class="card-body">
+                            <h5 class="card-title">SwiftCraft: IOS Development Bootcamp</h5>
+                            <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
+                            <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center mt-3 apply">
+                                <div>
+                                    <p class="mb-0 text-secondary">Son Başvuru:</p>
+                                    <p class="mb-0">Başvurular Tamamlandı</p>
+                                </div>
+                                <a href="#" class="btn btn-success">İncele</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/Swift_Craft.webp" class="card-img-top" alt="Database Bootcamp">
+                        <div class="card-body">
+                            <h5 class="card-title">SwiftCraft: IOS Development Bootcamp</h5>
+                            <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
+                            <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center mt-3 apply">
+                                <div>
+                                    <p class="mb-0 text-secondary">Son Başvuru:</p>
+                                    <p class="mb-0">Başvurular Tamamlandı</p>
+                                </div>
+                                <a href="#" class="btn btn-success">İncele</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/Swift_Craft.webp" class="card-img-top" alt="Database Bootcamp">
+                        <div class="card-body">
+                            <h5 class="card-title">SwiftCraft: IOS Development Bootcamp</h5>
+                            <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
+                            <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center mt-3 apply">
+                                <div>
+                                    <p class="mb-0 text-secondary">Son Başvuru:</p>
+                                    <p class="mb-0">Başvurular Tamamlandı</p>
+                                </div>
+                                <a href="#" class="btn btn-success">İncele</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/Swift_Craft.webp" class="card-img-top" alt="Database Bootcamp">
+                        <div class="card-body">
+                            <h5 class="card-title">SwiftCraft: IOS Development Bootcamp</h5>
+                            <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
+                            <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center mt-3 apply">
+                                <div>
+                                    <p class="mb-0 text-secondary">Son Başvuru:</p>
+                                    <p class="mb-0">Başvurular Tamamlandı</p>
+                                </div>
+                                <a href="#" class="btn btn-success">İncele</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/Swift_Craft.webp" class="card-img-top" alt="Database Bootcamp">
+                        <div class="card-body">
+                            <h5 class="card-title">SwiftCraft: IOS Development Bootcamp</h5>
+                            <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
+                            <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center mt-3 apply">
+                                <div>
+                                    <p class="mb-0 text-secondary">Son Başvuru:</p>
+                                    <p class="mb-0">Başvurular Tamamlandı</p>
+                                </div>
+                                <a href="#" class="btn btn-success">İncele</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/Swift_Craft.webp" class="card-img-top" alt="Database Bootcamp">
+                        <div class="card-body">
+                            <h5 class="card-title">SwiftCraft: IOS Development Bootcamp</h5>
+                            <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
+                            <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center mt-3 apply">
+                                <div>
+                                    <p class="mb-0 text-secondary">Son Başvuru:</p>
+                                    <p class="mb-0">Başvurular Tamamlandı</p>
+                                </div>
+                                <a href="#" class="btn btn-success">İncele</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/Swift_Craft.webp" class="card-img-top" alt="Database Bootcamp">
+                        <div class="card-body">
+                            <h5 class="card-title">SwiftCraft: IOS Development Bootcamp</h5>
+                            <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
+                            <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center mt-3 apply">
+                                <div>
+                                    <p class="mb-0 text-secondary">Son Başvuru:</p>
+                                    <p class="mb-0">Başvurular Tamamlandı</p>
+                                </div>
+                                <a href="#" class="btn btn-success">İncele</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/Swift_Craft.webp" class="card-img-top" alt="Database Bootcamp">
+                        <div class="card-body">
+                            <h5 class="card-title">SwiftCraft: IOS Development Bootcamp</h5>
+                            <p class="card-text">Ücretsiz öğren, mezun ol, sertifika sahibi ol!</p>
+                            <span class="badge rounded-pill text-bg-light text-dark center bg-dark-subtle">Bootcamp</span>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center mt-3 apply">
+                                <div>
+                                    <p class="mb-0 text-secondary">Son Başvuru:</p>
+                                    <p class="mb-0">Başvurular Tamamlandı</p>
+                                </div>
+                                <a href="#" class="btn btn-success">İncele</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav aria-label="Page navigation ">
+                <ul class="pagination justify-content-center">
+                <li class="page-item disabled prev">
+                    <a class="page-link" tabindex="-1"> < </a>
+                </li>
+                <li class="page-item"><a class="page-link" >1</a></li>
+                <li class="page-item"><a class="page-link" >2</a></li>
+                <li class="page-item"><a class="page-link" >3</a></li>
+                <li class="page-item next">
+                    <a class="page-link"> > </a>
+                </li>
+                </ul>
+            </nav>
+        </section>
+        <section class="container education_about">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" id="accordionToggle" aria-expanded="false" aria-controls="collapseOne">
+                        <h2>Bootcamp Eğitimleri Hakkında</h2>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                    <div class="accordion-body">
+                        <p><strong>Bootcamp</strong>, yoğun ve hızlı bir şekilde belirli bir beceri veya konuda eğitim almak için düzenlenen bir programdır. Bu programlar, katılımcılara genellikle kısa bir süre içinde yoğun bir eğitim sunarak onları hızlıca iş dünyasına hazırlar. Bir bootcamp programı, uzman eğitmenler tarafından yönlendirilir ve katılımcılara pratik beceriler kazandırmayı hedefler. Eğitim süreci genellikle grup çalışmaları, proje tabanlı öğrenme ve atölye çalışmaları gibi interaktif yöntemleri içerir. Bu şekilde, katılımcılar teorik bilgiyi uygulamaya dökebilir ve gerçek dünya senaryolarına uygun çözümler üretebilir. Genellikle tam zamanlı bir program olarak tasarlanır ve katılımcılar, sürekli ödevler ve projeler üzerinde çalışarak kendilerini geliştirir. Bootcamp’lerin avantajları arasında hızlı öğrenme, pratik deneyim kazanma, endüstri uzmanlarından direkt geri bildirim alma ve kariyer fırsatlarına erişim sağlama yer alır. Bu programlar, özellikle hızla büyüyen teknoloji sektöründe istihdam edilmek isteyenler için popüler bir seçenektir. Bootcamp programları, sadece eğitim sunmanın ötesine geçerek katılımcılara birçok avantaj sağlar. Öncelikle, bootcamp eğitimi genellikle iş dünyasının taleplerine uygun olarak tasarlanır. İşverenler, bootcamp mezunlarının hızlı bir şekilde uygulama becerileri geliştirdiğini ve gerçek dünya projelerinde çalışmaya hazır olduklarını fark eder. Bu nedenle bootcamp mezunları, iş başvurularında diğer adaylardan ayrışabilir ve rekabet avantajı elde edebilir. Bootcamp programları, katılımcılara hızlı ve etkili bir şekilde belirli bir beceri veya konuda eğitim alma imkanı sunar.</p>
+
+                        <h5><strong>Bootcamp'te Hangi Konular Üzerine Eğitim Verilir?</strong></h5>
+                        <p><strong>Bootcamp nedir</strong> sorusu genellikle belirli becerileri kazanmak veya mesleki yetkinlikleri geliştirmek amacıyla düzenlenen programlar bütünü olarak cevaplanır. <strong>Bootcamp programları</strong> çeşitli konular üzerine eğitim verirken özellikle teknoloji ve dijital alanlarında yoğunlaşır. Bu programlarda eğitimi verilen bazı konular vardır. Yazılım geliştirme bunlardan ilkidir. Birçok <strong>yazılım bootcamp</strong>, farklı programlama dilleri ve geliştirme araçları üzerine eğitim sunar. Katılımcılara temel programlama becerilerini öğretirken; web geliştirme, mobil uygulama geliştirme veya veri tabanı yönetimi gibi alanlarda da derinlemesine bilgi sağlar. Bunun yanında <strong>ücretsiz yazılım bootcamp'leri</strong>, yazılım becerilerini geliştirmek isteyenler için erişilebilir bir seçenektir. Katılımcılar, maliyet faktörünü dikkate almadan yazılım alanında kendini geliştirme fırsatı bulur. <strong>Ücretsiz yazılım eğitimine</strong> katılarak siber güvenlik programları, siber saldırılara karşı koruma stratejileri ve ağ güvenliği, etik hackerlık (ethical hacking) ve veri güvenliği gibi konularda eğitim alabilirsiniz. Bunlara ek olarak <strong>bootcamp coding</strong> eğitimi, genellikle farklı programlama dilleri ve teknolojileri üzerine odaklanır. Bunlar arasında popüler diller ve framework'ler şunlar olabilir: Python, JavaScript, Ruby, Java, C#, .NET, PHP, HTML/CSS gibi. Eğitim süreci, katılımcıların temel programlama kavramlarını öğrenmelerini ve pratik becerilerini geliştirmelerini sağlar. Bootcamp programları, bahsedilenlerden farklı konular üzerine de eğitim verebilir. Dijital tasarım, yapay zeka, proje yönetimi, cloud computing ve iş analitiği gibi konular da Bootcamp'ların odaklandığı alanlar arasında yer alabilir. Bootcamp'ların sunduğu konular, genellikle iş dünyasının taleplerine ve sektörel ihtiyaçlara göre şekillenir.</p>
+
+                        <h5><strong>Bootcamp’e Nasıl Başvuru Yapılır?</strong></h5>
+                        <p><strong>Bootcamp başvuru</strong> süreci, program sağlayıcısının belirlediği prosedürlere ve gerekliliklere bağlı olarak değişebilir. Genel olarak bazı adımlar takip edilerek bir bootcamp programına başvurulabilir.</p>
+                        <ul>
+                            <li>İlgilenilen <strong>bootcamp kursları</strong> araştırılabilir. Programların içeriği, süresi, maliyeti, eğitmen kadrosu ve mezunların geri bildirimleri incelenerek en uygun olan belirlenebilir.</li>
+                            <li>Seçilen bootcamp programının başvuru şartları dikkatlice okunabilir. Genellikle bu şartlar, yaş sınırları, dil becerileri, ön koşullar veya önceki deneyim gereklilikleri gibi faktörleri içerir.</li>
+                            <li>Bootcamp programının resmi web sitesi veya başvuru portalı üzerinden <strong>online bootcamp</strong> başvuru formunu doldurulabilir. Form genellikle kişisel bilgileri, eğitim geçmişi, motivasyonu ve varsa önceki deneyimleri içerir.</li>
+                            <li>Bazı bootcamp programları başvuru ücreti talep edebilir. Başvurunun tamamlanması için gerekli olan ücreti ödenebilir. Bu ücret, başvurunun değerlendirilmesi ve değerlendirme süreci için kullanılır. <strong>Bootcamp ücretsiz</strong> başvuruları için de ekstra kontroller yapılabilir, buna göre başvuruda bulunulabilir.</li>
+                            <li>Başvurunun incelenmesi ve değerlendirilmesi süreci tamamlanabilir. Bu süreç, başvurudaki bilgilerin doğruluğunu ve uygunluğunu kontrol edebilir, gerekirse mülakat veya sınav gibi ek adımları içerebilir.</li>
+                            <li>Başvurunun başarılı olması halinde, program sağlayıcısı bir kabul teklifi yapar. Kabul edilirse, kayıt işlemleri tamamlanarak bootcamp programına katılmaya hak kazanılır. Başvuru reddedildiğinde ise geri bildirim alabilir ve başka bir programa veya başka bir döneme başvurulabilir.</li>
+                        </ul>
+
+                        <h5><strong>Türkiye’de Bootcamp Programları</strong></h5>
+                        <p>
+                            Türkiye'de <strong>bootcampprogramları</strong>, hızlı ve yoğun bir şekilde mesleki beceri ve yetkinlikleri geliştirmek için tasarlanmış eğitim programlarıdır. Bu programlar genellikle kısa süreli, pratik odaklı ve yoğun bir şekilde gerçekleştirilir. Bootcamp programları özellikle teknoloji sektöründe, yazılım geliştirme, veri analitiği, dijital pazarlama, yapay zeka ve girişimcilik gibi alanlarda popülerdir. Türkiye'de çeşitli bootcamp programları bulunur ve birçok eğitim kurumu, teknoloji şirketi veya girişim tarafından sunulur. Bu programlar genellikle iş birliği içinde çalışan eğitmenler, mentörler ve sektör profesyonelleri tarafından desteklenir. Programlar genellikle gerçek dünya projeleri üzerinde çalışma fırsatı sunar ve öğrencilerin pratik deneyim kazanmalarını sağlar. Türkiye'de bootcamp programlarının sıklığı son yıllarda önemli ölçüde artış gösterir. Teknoloji sektöründeki hızlı gelişmeler, iş dünyasının ihtiyaçları ve yetenekli çalışan arayışı, bootcamp programlarının popülerliğini artırır. Özellikle büyük şehirlerde, İstanbul, Ankara ve İzmir gibi, birçok bootcamp programı düzenlenir. Bootcamp programlarının sıklığı, birkaç faktöre bağlı olarak değişebilir. Öncelikle, programları düzenleyen eğitim kurumları veya kuruluşların sayısı etkili olur. Aynı zamanda, bootcamp programlarının sıklığı, sektör talepleri ve işgücü piyasasındaki ihtiyaçlara bağlıdır. Teknoloji sektöründeki hızlı büyüme ve talep, özellikle yazılım geliştirme gibi alanlarda bootcamp programlarının düzenlenmesini teşvik eder. Bu noktada ücretsiz yazılım eğitimine katılarak kendinizi geliştirebilir ve sektörel yenilikleri takip edebilirsiniz. Türkiye'de bootcamp programlarının sıklığı, teknoloji sektöründeki talepler ve işgücü ihtiyaçlarına bağlı olarak artar. Birçok eğitim kurumu ve şirket, bu tür programları düzenlemekte ve çeşitli dönemlerde katılımcılara sunar. Özellikle büyük şehirlerde bootcamp programlarına erişim daha yaygındır.
+                        </p>
+
+                        <h5><strong>Bootcamp eğitimi ne kadar sürer?</strong></h5>
+                        <p>Bootcamp programlarının süresi, konusu ve içeriğine bağlı olarak değişebilir. Birkaç haftadan birkaç aya kadar değişen programlar mevcuttur. Genellikle bootcamp eğitimi oldukça yoğun ve katılımcıların günlük olarak düzenli bir şekilde katılım göstermesini gerektirir. Program süresi boyunca, katılımcılar genellikle uzmanlar tarafından yönlendirilen sınıf içi dersler, atölye çalışmaları ve proje tabanlı çalışmalar gibi farklı öğrenme yöntemlerini deneyimler.</p>
+
+                        <h5><strong>Bootcamp nedir ve nasıl işler?</strong></h5>
+                        <p>Bootcamp, katılımcılara belirli bir süre içinde yoğun ve odaklı bir şekilde belirli bir konuda eğitim veren hızlandırılmış bir öğrenme programıdır. Bu tür programlar genellikle yazılım geliştirme, veri bilimi, dijital pazarlama gibi teknik veya sektörel alanlarda düzenlenir. Katılımcılar, yoğun çalışma saatleri boyunca uzman eğitmenler tarafından yönlendirilir ve gerçek projeler üzerinde pratik yapma fırsatı bulurlar</p>
+
+                        <h5><strong>Ücretsiz bootcamp’ler var mı?</strong></h5>
+                        <p>Evet, bazı bootcamp programları ücretsiz olabilir. Ücretsiz bootcampler, katılımcılara belirli bir konuda eğitim ve beceri geliştirme fırsatı sunarken, herhangi bir mali yükümlülük veya ücret talep etmezler. Ücretsiz bootcamplere katılım genellikle daha geniş bir kitleye erişim sağlamak ve eğitim fırsatlarından daha fazla kişinin yararlanmasını sağlamak amacıyla düzenlenir.</p>
+
+                        <h5><strong>Bootcamp'lerde sertifika verilir mi?</strong></h5>
+                        <p>Evet, çoğu bootcamp programı başarıyla tamamlayan katılımcılara bir sertifika verir. Bootcamp sertifikaları, katılımcının belirli bir konuda yoğun bir eğitim aldığını ve belirli becerileri kazandığını doğrular. Bu sertifikalar, işverenler için değerli olabilir ve katılımcıların CV'lerine ve LinkedIn profillerine ekleyerek kariyerlerindeki fırsatları artırabilir. Ancak, sertifikanın değeri, bootcamp'ın itibarı ve içeriği ile birlikte değerlendirilmelidir. Bazı bootcamp programları, endüstri tarafından tanınan sertifikalara sahip olabilirken, diğerleri sadece programı tamamlama sertifikası sunabilir. Katılımcıların, kendileri için en uygun bootcamp programını seçerken sertifika verme politikalarını dikkate almaları önemlidir.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer-section">
+                        <h4>TECHCAREER</h4>
+                        
+                        <div class="br">
+                            <a href="#">Hakkımızda</a>
+                        </div> 
+                        <div class="br">
+                            <a href="#">Etkinlikler</a>
+                        </div>
+                        <div class="br">
+                            <a href="#">Şirketler İçin</a>
+                        </div>
+                        <div class="br">
+                            <a href="#">Eğitmen Ol</a>
+                        </div>
+                        <div class="br">
+                            <a href="#">İş Birliği</a>
+                        </div>
+                        <div class="br">
+                            <a href="#">Referanslar</a>
+                        </div>
+                        <div class="br">
+                            <a href="#">İletişim</a>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h4>BAŞVUR</h4>
+                        <div>
+                            <div class="br">
+                                <a href="bootcamp.html">Bootcamp</a>
+                            </div>
+                            <div class="br">
+                                <a href="hackathon.html">Hackathon</a>
+                            </div>
+                            <div class="br">
+                                <a href="#">Hiring Challenge</a>
+                            </div>
+                            <div class="br">
+                                <a href="#">İş İlanları</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h4>SENİN İÇİN</h4>
+                        <div class="br">
+                            <a href="#">Komünite</a>
+                        </div>
+                        <div class="br">
+                            <a href="#">TDC</a>
+                        </div>
+                        <div class="br">
+                            <a href="#">Blog</a>
+                        </div>
+                        <div class="br">
+                            <a href="#">Podcast</a>
+                        </div>
+                        <div class="br">
+                            <a href="#">Kariyer Rehberi</a>
+                        </div>
+                        <div class="br">
+                            <a href="#">Teknik Sözlük</a>
+                        </div>
+                        <div class="br">
+                            <a href="#">Mülakat Soruları</a>
+                        </div>   
+                    </div>
+                    <div class="footer-section">
+                        <h4>VERİ POLİTİKAMIZ</h4>
+                        <div class="br">
+                            <a href="#">Aydınlatma Metni</a>
+                        </div>
+                        <div class="br">
+                            <a href="#">Hizmet Sözleşmesi</a>
+                        </div>
+                        <div class="br">
+                            <a href="#">Açık Rıza Metni</a>
+                        </div>
+                        <div class="br">
+                            <a href="#">Çerez Politikası</a>
+                        </div>
+                    </div>
+                    <div class="footer-section footer-social">
+                        <img src="img/logo.jpg" alt="" class="logo">
+                        <br><br>
+                        <p>Türkiye’nin teknoloji kariyeri platformu</p>
+                        <br>
+                        <h4>Sosyal Medya</h4>
+                        <div class="social-icons">
+                            <a href="#"></a><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"></a><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="lang-switch">
+                        <button class="active">TR</button>
+                        <span></span>
+                        <button>EN</button>
+                    </div>
+                    <div class="copyright">
+                        Tüm hakları saklıdır © Copyright 2025 - support@techcareer.net
+                    </div>
+                </div>
+                
+                <div class="footer-iskur">
+                    <div class="iskur-img">
+                        <img src="img/iskur.webp" alt="">
+                    </div>
+                    <div class="info-text">
+                        Kariyer.net Elektronik Yayıncılık ve İletişim Hizmetleri A.Ş. Özel İstihdam Bürosu olarak 31/08/2024 – 30/08/2027 tarihleri arasında faaliyette bulunmak üzere, Türkiye İş Kurumu tarafından 26/07/2024 tarih ve 16398069 sayılı karar uyarınca 170 nolu belge ile faaliyet göstermektedir. 4904 sayılı kanun uyarınca iş arayanlardan ücret alınmayacak ve menfaat temin edilmeyecektir. Şikayetleriniz için aşağıdaki telefon numaralarına başvurabilirsiniz. Türkiye İş Kurumu İstanbul İl Müdürlüğü: 0212 249 29 87 Türkiye iş Kurumu İstanbul Çalışma ve İş Kurumu Ümraniye Hizmet Merkezi : 0216 523 90 26
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
