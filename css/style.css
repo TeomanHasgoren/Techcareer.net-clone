@@ -630,7 +630,7 @@ span{
 /*Information kısmı*/
 
 .Information {
-    background-color: #f5f5f5; 
+    background-color: white; 
     padding: 40px 0; 
 }
 .Information .box-body{ 
@@ -674,6 +674,9 @@ span{
 }
 
 /*Referances*/
+.references {
+    margin-top: 25px;
+}
 .references .card-img-top {
     max-width: 300px;
     object-fit: contain;
